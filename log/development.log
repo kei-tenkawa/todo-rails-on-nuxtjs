@@ -2294,3 +2294,49 @@ I, [2022-06-20T12:00:00.966145 #1]  INFO -- : Started GET "/assets/application.s
 I, [2022-06-20T12:00:00.967991 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 I, [2022-06-20T12:00:00.969878 #1]  INFO -- : Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 172.27.0.1 at 2022-06-20 12:00:00 +0000
 I, [2022-06-20T12:00:00.971982 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-20T12:18:34.332158 #1] DEBUG -- :   [1m[35m (3.5ms)[0m  [1m[35mCREATE DATABASE "todo_development" ENCODING = 'unicode'[0m
+D, [2022-06-20T12:18:34.332760 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:18:34.379099 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "todo_test" ENCODING = 'unicode'[0m
+D, [2022-06-20T12:18:34.380164 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.180658 #1] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5790848985702910395)[0m
+D, [2022-06-20T12:19:10.181380 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.226604 #1] DEBUG -- :   [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-20T12:19:10.227249 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.234015 #1] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2022-06-20T12:19:10.234591 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.237089 #1] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-20T12:19:10.237718 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.238783 #1] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-20T12:19:10.239285 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.240226 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5790848985702910395)[0m
+D, [2022-06-20T12:19:10.240792 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-20T12:19:10.244463 #1] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-20T12:19:10.244989 #1] DEBUG -- :   ↳ bin/rails:9
+I, [2022-06-20T12:19:17.346075 #1]  INFO -- : Started GET "/" for 172.28.0.1 at 2022-06-20 12:19:17 +0000
+I, [2022-06-20T12:19:17.348091 #1]  INFO -- : Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-20T12:19:17.436868 #1] DEBUG -- :   [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-20T12:19:17.438161 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-06-20T12:19:17.538645 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-20T12:19:17.590409 #1] DEBUG -- :   [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-06-20T12:19:17.591290 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-20T12:19:17.793594 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-20T12:19:17.806973 #1] DEBUG -- :   [1m[36mTaskType Load (4.8ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-06-20T12:19:17.807816 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-06-20T12:19:17.975302 #1] DEBUG -- :   [1m[35m (9.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-06-20T12:19:17.976150 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-06-20T12:19:18.002139 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-20T12:19:18.002936 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-06-20T12:19:18.014003 #1] DEBUG -- :   [1m[36mTask Load (7.6ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-20T12:19:18.015302 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:42
+D, [2022-06-20T12:19:18.035216 #1] DEBUG -- :   [1m[36mTaskType Load (0.2ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T12:19:18.036547 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T12:19:18.038013 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T12:19:18.038861 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T12:19:18.040231 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T12:19:18.041266 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T12:19:18.042542 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T12:19:18.043808 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-06-20T12:19:18.045323 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (251.1ms)
+I, [2022-06-20T12:19:21.197349 #1]  INFO -- : Completed 200 OK in 3655ms (Views: 3476.3ms | ActiveRecord: 43.5ms)
+
+
