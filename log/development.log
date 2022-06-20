@@ -2260,3 +2260,37 @@ I, [2022-06-20T09:19:10.639149 #1]  INFO -- :   Rendered tasks/index.html.slim w
 I, [2022-06-20T09:19:10.776919 #1]  INFO -- : Completed 200 OK in 357ms (Views: 285.8ms | ActiveRecord: 21.3ms)
 
 
+I, [2022-06-20T11:59:58.657432 #1]  INFO -- : Started GET "/" for 172.27.0.1 at 2022-06-20 11:59:58 +0000
+I, [2022-06-20T11:59:58.659293 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-20T11:59:58.993452 #1] DEBUG -- :   [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-20T11:59:58.994485 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-06-20T11:59:59.091916 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-20T11:59:59.159515 #1] DEBUG -- :   [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-06-20T11:59:59.160317 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-20T11:59:59.379811 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-20T11:59:59.399537 #1] DEBUG -- :   [1m[36mTaskType Load (7.0ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-06-20T11:59:59.400654 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-06-20T11:59:59.643192 #1] DEBUG -- :   [1m[35m (18.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-06-20T11:59:59.644624 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-06-20T11:59:59.771400 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-20T11:59:59.773950 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-06-20T11:59:59.792678 #1] DEBUG -- :   [1m[36mTask Load (10.4ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-20T11:59:59.794307 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:42
+D, [2022-06-20T11:59:59.832200 #1] DEBUG -- :   [1m[36mTaskType Load (1.2ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T11:59:59.835930 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T11:59:59.837900 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T11:59:59.838915 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T11:59:59.840459 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T11:59:59.843130 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-06-20T11:59:59.845535 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-20T11:59:59.848685 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-06-20T11:59:59.851165 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (470.7ms)
+I, [2022-06-20T12:00:00.922803 #1]  INFO -- : Completed 200 OK in 1830ms (Views: 1593.6ms | ActiveRecord: 69.5ms)
+
+
+I, [2022-06-20T12:00:00.960173 #1]  INFO -- : Started GET "/assets/select2.self-21d68207fa3301394a06e2ca04b61aff1b31d4368025df9a372d564c77adc968.js?body=1" for 172.27.0.1 at 2022-06-20 12:00:00 +0000
+I, [2022-06-20T12:00:00.962847 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-20T12:00:00.966145 #1]  INFO -- : Started GET "/assets/application.self-a1b18aa36409689ffb0c82b74473a5a3bd7ea7822558fb4f44cf809fc966c69f.css?body=1" for 172.27.0.1 at 2022-06-20 12:00:00 +0000
+I, [2022-06-20T12:00:00.967991 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-20T12:00:00.969878 #1]  INFO -- : Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 172.27.0.1 at 2022-06-20 12:00:00 +0000
+I, [2022-06-20T12:00:00.971982 #1]  INFO -- : Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
