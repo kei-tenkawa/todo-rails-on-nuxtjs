@@ -1,0 +1,20 @@
+h1.mt-3 タスクの種類の詳細
+
+.nav.justify-content-end
+  = link_to '一覧', task_types_path, class: 'nav-link'
+table.table.table-hover
+  tbody
+    tr
+      th= TaskType.human_attribute_name(:id)
+      td= @task_type.id
+    tr
+      th= TaskType.human_attribute_name(:name)
+      td= @task_type.name
+    tr
+      th= TaskType.human_attribute_name(:created_at)
+      td= @task_type.created_at
+    tr
+      th= TaskType.human_attribute_name(:updated_at)
+      td= @task_type.updated_at
+= link_to '編集', edit_task_type_path, class: 'btn btn-primary me-3'
+= link_to '削除', @task_type, method: :delete, data: {confirm: "タスク「#{@task_type.name}」を削除します。よろしいですか？"}, class: 'btn btn-danger'

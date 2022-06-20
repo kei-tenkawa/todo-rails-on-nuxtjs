@@ -1,0 +1,1279 @@
+# Logfile created on 2022-06-09 04:38:09 +0000 by logger.rb/61378
+I, [2022-06-09T04:38:09.962101 #1]  INFO -- : Started GET "/" for 192.168.48.1 at 2022-06-09 04:38:09 +0000
+I, [2022-06-09T04:38:09.980319 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:10.237836 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T04:38:10.296049 #1] DEBUG -- :   [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T04:38:10.296737 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T04:38:10.459151 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T04:38:10.481128 #1] DEBUG -- :   [1m[36mTask Load (9.5ms)[0m  [1m[34mSELECT DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T04:38:10.482180 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+I, [2022-06-09T04:38:10.507329 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (47.2ms)
+I, [2022-06-09T04:38:10.630930 #1]  INFO -- : Completed 200 OK in 392ms (Views: 235.4ms | ActiveRecord: 52.2ms)
+
+
+I, [2022-06-09T04:38:10.671959 #1]  INFO -- : Started GET "/assets/application.self-20ef19ede69869a10b8ee6c192a59a3b6fa39b337d51a478e494bd8a46dea8f8.css?body=1" for 192.168.48.1 at 2022-06-09 04:38:10 +0000
+I, [2022-06-09T04:38:10.679305 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:10.683936 #1]  INFO -- : Started GET "/assets/activestorage.self-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js?body=1" for 192.168.48.1 at 2022-06-09 04:38:10 +0000
+I, [2022-06-09T04:38:10.685301 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:10.685066 #1]  INFO -- : Started GET "/assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1" for 192.168.48.1 at 2022-06-09 04:38:10 +0000
+I, [2022-06-09T04:38:10.688501 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:10.687909 #1]  INFO -- : Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 192.168.48.1 at 2022-06-09 04:38:10 +0000
+I, [2022-06-09T04:38:10.690534 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:10.685630 #1]  INFO -- : Started GET "/assets/rails-ujs.self-81c572f39b69ead02e3f97fe43b76954a434591bc2837e3a35af212315e67569.js?body=1" for 192.168.48.1 at 2022-06-09 04:38:10 +0000
+I, [2022-06-09T04:38:10.693121 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:13.135197 #1]  INFO -- : Started GET "/tasks.csv" for 192.168.48.1 at 2022-06-09 04:38:13 +0000
+I, [2022-06-09T04:38:13.139214 #1]  INFO -- : Cannot render console from 192.168.48.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T04:38:13.144950 #1]  INFO -- : Processing by TasksController#index as CSV
+D, [2022-06-09T04:38:13.154874 #1] DEBUG -- :   [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T04:38:13.172602 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T04:38:13.209700 #1]  INFO -- : Completed 500 Internal Server Error in 59ms (ActiveRecord: 3.1ms)
+
+
+F, [2022-06-09T04:38:13.210648 #1] FATAL -- :   
+F, [2022-06-09T04:38:13.211265 #1] FATAL -- : NameError (uninitialized constant Task::CSV):
+F, [2022-06-09T04:38:13.211799 #1] FATAL -- :   
+F, [2022-06-09T04:38:13.212337 #1] FATAL -- : app/models/task.rb:16:in `generate_csv'
+app/controllers/tasks_controller.rb:9:in `block (2 levels) in index'
+app/controllers/tasks_controller.rb:7:in `index'
+I, [2022-06-09T04:38:13.267141 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T04:38:13.280826 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T04:38:13.284452 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+I, [2022-06-09T04:38:13.296610 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T04:38:13.298250 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+I, [2022-06-09T04:38:13.310620 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T04:38:13.312066 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2022-06-09T04:38:13.312710 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.5ms)
+I, [2022-06-09T04:39:36.173281 #1]  INFO -- : Started GET "/tasks.csv" for 192.168.80.1 at 2022-06-09 04:39:36 +0000
+I, [2022-06-09T04:39:36.174683 #1]  INFO -- : Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-09T04:39:36.454182 #1] DEBUG -- :   [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-09T04:39:36.454953 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-06-09T04:39:36.511548 #1]  INFO -- : Processing by TasksController#index as CSV
+D, [2022-06-09T04:39:36.560528 #1] DEBUG -- :   [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T04:39:36.561285 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-06-09T04:39:36.625074 #1] DEBUG -- :   [1m[36mTask Load (9.0ms)[0m  [1m[34mSELECT DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T04:39:36.625936 #1] DEBUG -- :   ↳ app/models/task.rb:18
+I, [2022-06-09T04:39:36.644087 #1]  INFO -- :   Rendering text template
+I, [2022-06-09T04:39:36.645337 #1]  INFO -- :   Rendered text template (0.0ms)
+I, [2022-06-09T04:39:36.646077 #1]  INFO -- : Sent data task-2022060936.csv (3.2ms)
+I, [2022-06-09T04:39:36.646976 #1]  INFO -- : Completed 200 OK in 135ms (Views: 3.0ms | ActiveRecord: 23.7ms)
+
+
+I, [2022-06-09T05:07:43.027512 #1]  INFO -- : Started GET "/" for 192.168.80.1 at 2022-06-09 05:07:43 +0000
+I, [2022-06-09T05:07:43.033195 #1]  INFO -- : Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T05:07:43.197488 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T05:07:43.245371 #1] DEBUG -- :   [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T05:07:43.246307 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T05:07:43.401134 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T05:07:43.512212 #1] DEBUG -- :   [1m[36mTask Load (4.2ms)[0m  [1m[34mSELECT DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T05:07:43.512863 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+I, [2022-06-09T05:07:43.538955 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (137.0ms)
+I, [2022-06-09T05:07:44.363321 #1]  INFO -- : Completed 200 OK in 1165ms (Views: 1031.9ms | ActiveRecord: 33.7ms)
+
+
+I, [2022-06-09T05:17:00.193124 #1]  INFO -- : Started GET "/" for 192.168.96.1 at 2022-06-09 05:17:00 +0000
+I, [2022-06-09T05:17:00.194760 #1]  INFO -- : Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-09T05:17:00.426674 #1] DEBUG -- :   [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-09T05:17:00.427387 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-06-09T05:17:00.477918 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T05:17:00.523646 #1] DEBUG -- :   [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T05:17:00.524442 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T05:17:00.674297 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T05:17:01.056744 #1] DEBUG -- :   [1m[36mTask Load (12.7ms)[0m  [1m[34mSELECT DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T05:17:01.057574 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+I, [2022-06-09T05:17:01.077651 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (402.8ms)
+I, [2022-06-09T05:17:03.344153 #1]  INFO -- : Completed 200 OK in 2865ms (Views: 2725.1ms | ActiveRecord: 33.5ms)
+
+
+I, [2022-06-09T05:31:58.751886 #1]  INFO -- : Started GET "/tasks/5" for 192.168.96.1 at 2022-06-09 05:31:58 +0000
+I, [2022-06-09T05:31:58.755883 #1]  INFO -- : Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T05:32:03.950008 #1]  INFO -- : Processing by TasksController#show as HTML
+I, [2022-06-09T05:32:03.951009 #1]  INFO -- :   Parameters: {"id"=>"5"}
+D, [2022-06-09T05:32:04.021346 #1] DEBUG -- :   [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T05:32:04.022481 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-06-09T05:32:04.091380 #1] DEBUG -- :   [1m[36mTask Load (5.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 3], ["id", 5], ["LIMIT", 1]]
+D, [2022-06-09T05:32:04.092253 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:64
+I, [2022-06-09T05:32:04.262164 #1]  INFO -- :   Rendering tasks/show.html.slim within layouts/application
+I, [2022-06-09T05:32:04.353205 #1]  INFO -- :   Rendered tasks/show.html.slim within layouts/application (89.8ms)
+I, [2022-06-09T05:32:04.440124 #1]  INFO -- : Completed 200 OK in 488ms (Views: 300.4ms | ActiveRecord: 50.0ms)
+
+
+I, [2022-06-09T05:32:08.462119 #1]  INFO -- : Started GET "/tasks/8" for 192.168.96.1 at 2022-06-09 05:32:08 +0000
+I, [2022-06-09T05:32:08.466673 #1]  INFO -- : Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T05:32:08.472390 #1]  INFO -- : Processing by TasksController#show as HTML
+I, [2022-06-09T05:32:08.474817 #1]  INFO -- :   Parameters: {"id"=>"8"}
+D, [2022-06-09T05:32:08.479096 #1] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T05:32:08.481175 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-06-09T05:32:08.484414 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 3], ["id", 8], ["LIMIT", 1]]
+D, [2022-06-09T05:32:08.486056 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:64
+I, [2022-06-09T05:32:08.609729 #1]  INFO -- :   Rendering tasks/show.html.slim within layouts/application
+I, [2022-06-09T05:32:08.614071 #1]  INFO -- :   Rendered tasks/show.html.slim within layouts/application (3.4ms)
+I, [2022-06-09T05:32:08.682569 #1]  INFO -- : Completed 200 OK in 206ms (Views: 149.0ms | ActiveRecord: 1.2ms)
+
+
+D, [2022-06-09T07:10:37.269441 #30] DEBUG -- :   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-06-09T07:11:14.720039 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.740174 #30] DEBUG -- :   [1m[36mTask Create (17.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク0"], ["created_at", "2022-06-09 07:11:14.722011"], ["updated_at", "2022-06-09 07:11:14.722011"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.743922 #30] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.745228 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.746733 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク1"], ["created_at", "2022-06-09 07:11:14.746178"], ["updated_at", "2022-06-09 07:11:14.746178"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.749510 #30] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.751014 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.752628 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク2"], ["created_at", "2022-06-09 07:11:14.752047"], ["updated_at", "2022-06-09 07:11:14.752047"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.757636 #30] DEBUG -- :   [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.760757 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.763968 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク3"], ["created_at", "2022-06-09 07:11:14.763326"], ["updated_at", "2022-06-09 07:11:14.763326"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.766101 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.767486 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.769695 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク4"], ["created_at", "2022-06-09 07:11:14.768840"], ["updated_at", "2022-06-09 07:11:14.768840"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.773830 #30] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.775297 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.777583 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク5"], ["created_at", "2022-06-09 07:11:14.777000"], ["updated_at", "2022-06-09 07:11:14.777000"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.779866 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.781375 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.782953 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク6"], ["created_at", "2022-06-09 07:11:14.782395"], ["updated_at", "2022-06-09 07:11:14.782395"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.787678 #30] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.789985 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.791616 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク7"], ["created_at", "2022-06-09 07:11:14.791026"], ["updated_at", "2022-06-09 07:11:14.791026"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.793556 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.794675 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.796433 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク8"], ["created_at", "2022-06-09 07:11:14.795668"], ["updated_at", "2022-06-09 07:11:14.795668"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.798671 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.799695 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.801932 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク9"], ["created_at", "2022-06-09 07:11:14.801171"], ["updated_at", "2022-06-09 07:11:14.801171"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.805095 #30] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.807410 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.808801 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク10"], ["created_at", "2022-06-09 07:11:14.808272"], ["updated_at", "2022-06-09 07:11:14.808272"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.811004 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.812160 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.813460 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク11"], ["created_at", "2022-06-09 07:11:14.812953"], ["updated_at", "2022-06-09 07:11:14.812953"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.815249 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.816531 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.818414 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク12"], ["created_at", "2022-06-09 07:11:14.817742"], ["updated_at", "2022-06-09 07:11:14.817742"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.822885 #30] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.824881 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.826987 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク13"], ["created_at", "2022-06-09 07:11:14.826415"], ["updated_at", "2022-06-09 07:11:14.826415"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.828657 #30] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.829955 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.831360 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク14"], ["created_at", "2022-06-09 07:11:14.830847"], ["updated_at", "2022-06-09 07:11:14.830847"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.834205 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.836259 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.839181 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク15"], ["created_at", "2022-06-09 07:11:14.838385"], ["updated_at", "2022-06-09 07:11:14.838385"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.841564 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.842840 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.844257 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク16"], ["created_at", "2022-06-09 07:11:14.843729"], ["updated_at", "2022-06-09 07:11:14.843729"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.846424 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.847664 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.849140 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク17"], ["created_at", "2022-06-09 07:11:14.848667"], ["updated_at", "2022-06-09 07:11:14.848667"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.851054 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.852685 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.856083 #30] DEBUG -- :   [1m[36mTask Create (1.0ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク18"], ["created_at", "2022-06-09 07:11:14.854310"], ["updated_at", "2022-06-09 07:11:14.854310"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.860148 #30] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.861727 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.863224 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク19"], ["created_at", "2022-06-09 07:11:14.862690"], ["updated_at", "2022-06-09 07:11:14.862690"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.865284 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.866583 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.868318 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク20"], ["created_at", "2022-06-09 07:11:14.867697"], ["updated_at", "2022-06-09 07:11:14.867697"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.871568 #30] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.873308 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.875339 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク21"], ["created_at", "2022-06-09 07:11:14.874544"], ["updated_at", "2022-06-09 07:11:14.874544"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.877208 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.878327 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.880572 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク22"], ["created_at", "2022-06-09 07:11:14.879888"], ["updated_at", "2022-06-09 07:11:14.879888"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.882991 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.884553 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.886696 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク23"], ["created_at", "2022-06-09 07:11:14.885911"], ["updated_at", "2022-06-09 07:11:14.885911"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.890239 #30] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.892428 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.894176 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク24"], ["created_at", "2022-06-09 07:11:14.893642"], ["updated_at", "2022-06-09 07:11:14.893642"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.896173 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.897259 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.898867 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク25"], ["created_at", "2022-06-09 07:11:14.898329"], ["updated_at", "2022-06-09 07:11:14.898329"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.901050 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.903442 #30] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.906373 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク26"], ["created_at", "2022-06-09 07:11:14.905735"], ["updated_at", "2022-06-09 07:11:14.905735"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.908813 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.910164 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.911468 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク27"], ["created_at", "2022-06-09 07:11:14.910941"], ["updated_at", "2022-06-09 07:11:14.910941"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.913188 #30] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.914389 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.916039 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク28"], ["created_at", "2022-06-09 07:11:14.915508"], ["updated_at", "2022-06-09 07:11:14.915508"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.918332 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.920169 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.923577 #30] DEBUG -- :   [1m[36mTask Create (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク29"], ["created_at", "2022-06-09 07:11:14.922274"], ["updated_at", "2022-06-09 07:11:14.922274"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.928081 #30] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.929207 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.930759 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク30"], ["created_at", "2022-06-09 07:11:14.930230"], ["updated_at", "2022-06-09 07:11:14.930230"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.933106 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.934828 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.937893 #30] DEBUG -- :   [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク31"], ["created_at", "2022-06-09 07:11:14.936799"], ["updated_at", "2022-06-09 07:11:14.936799"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.940432 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.941931 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.943263 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク32"], ["created_at", "2022-06-09 07:11:14.942769"], ["updated_at", "2022-06-09 07:11:14.942769"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.945011 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.946305 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.947718 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク33"], ["created_at", "2022-06-09 07:11:14.947216"], ["updated_at", "2022-06-09 07:11:14.947216"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.949834 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.951437 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.954006 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク34"], ["created_at", "2022-06-09 07:11:14.953229"], ["updated_at", "2022-06-09 07:11:14.953229"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.959358 #30] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.961384 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.963170 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク35"], ["created_at", "2022-06-09 07:11:14.962535"], ["updated_at", "2022-06-09 07:11:14.962535"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.965419 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.967222 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.969281 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク36"], ["created_at", "2022-06-09 07:11:14.968636"], ["updated_at", "2022-06-09 07:11:14.968636"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.972685 #30] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.974086 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.975675 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク37"], ["created_at", "2022-06-09 07:11:14.975143"], ["updated_at", "2022-06-09 07:11:14.975143"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.978890 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.979872 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.981369 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク38"], ["created_at", "2022-06-09 07:11:14.980835"], ["updated_at", "2022-06-09 07:11:14.980835"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.983476 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.984983 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.987522 #30] DEBUG -- :   [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク39"], ["created_at", "2022-06-09 07:11:14.986336"], ["updated_at", "2022-06-09 07:11:14.986336"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.989966 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.991254 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.992982 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク40"], ["created_at", "2022-06-09 07:11:14.992446"], ["updated_at", "2022-06-09 07:11:14.992446"], ["user_id", 1]]
+D, [2022-06-09T07:11:14.994902 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:14.996115 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:14.997893 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク41"], ["created_at", "2022-06-09 07:11:14.997364"], ["updated_at", "2022-06-09 07:11:14.997364"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.000548 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.002647 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.005481 #30] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク42"], ["created_at", "2022-06-09 07:11:15.004396"], ["updated_at", "2022-06-09 07:11:15.004396"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.008026 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.009342 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.010706 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク43"], ["created_at", "2022-06-09 07:11:15.010219"], ["updated_at", "2022-06-09 07:11:15.010219"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.012718 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.014198 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.015723 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク44"], ["created_at", "2022-06-09 07:11:15.015155"], ["updated_at", "2022-06-09 07:11:15.015155"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.018399 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.020859 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.024752 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク45"], ["created_at", "2022-06-09 07:11:15.024123"], ["updated_at", "2022-06-09 07:11:15.024123"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.027081 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.028265 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.029924 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク46"], ["created_at", "2022-06-09 07:11:15.029442"], ["updated_at", "2022-06-09 07:11:15.029442"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.031886 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.033150 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.034953 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク47"], ["created_at", "2022-06-09 07:11:15.034305"], ["updated_at", "2022-06-09 07:11:15.034305"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.038366 #30] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.040006 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.041495 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク48"], ["created_at", "2022-06-09 07:11:15.040940"], ["updated_at", "2022-06-09 07:11:15.040940"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.043399 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.044551 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.046137 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク49"], ["created_at", "2022-06-09 07:11:15.045551"], ["updated_at", "2022-06-09 07:11:15.045551"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.048420 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.049581 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.051200 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク50"], ["created_at", "2022-06-09 07:11:15.050495"], ["updated_at", "2022-06-09 07:11:15.050495"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.055590 #30] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.058784 #30] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.060591 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク51"], ["created_at", "2022-06-09 07:11:15.060050"], ["updated_at", "2022-06-09 07:11:15.060050"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.062520 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.063625 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.065086 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク52"], ["created_at", "2022-06-09 07:11:15.064583"], ["updated_at", "2022-06-09 07:11:15.064583"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.067744 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.069200 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.072207 #30] DEBUG -- :   [1m[36mTask Create (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク53"], ["created_at", "2022-06-09 07:11:15.070964"], ["updated_at", "2022-06-09 07:11:15.070964"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.074786 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.075986 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.077856 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク54"], ["created_at", "2022-06-09 07:11:15.077357"], ["updated_at", "2022-06-09 07:11:15.077357"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.079871 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.081342 #30] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.082999 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク55"], ["created_at", "2022-06-09 07:11:15.082391"], ["updated_at", "2022-06-09 07:11:15.082391"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.085589 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.087480 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.090027 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク56"], ["created_at", "2022-06-09 07:11:15.089406"], ["updated_at", "2022-06-09 07:11:15.089406"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.092521 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.093859 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.095777 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク57"], ["created_at", "2022-06-09 07:11:15.095014"], ["updated_at", "2022-06-09 07:11:15.095014"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.097765 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.099089 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.100765 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク58"], ["created_at", "2022-06-09 07:11:15.100143"], ["updated_at", "2022-06-09 07:11:15.100143"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.103701 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.105951 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.107464 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク59"], ["created_at", "2022-06-09 07:11:15.106922"], ["updated_at", "2022-06-09 07:11:15.106922"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.109522 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.110723 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.112182 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク60"], ["created_at", "2022-06-09 07:11:15.111685"], ["updated_at", "2022-06-09 07:11:15.111685"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.114950 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.116050 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.117651 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク61"], ["created_at", "2022-06-09 07:11:15.117036"], ["updated_at", "2022-06-09 07:11:15.117036"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.120074 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.121771 #30] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.124059 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク62"], ["created_at", "2022-06-09 07:11:15.123290"], ["updated_at", "2022-06-09 07:11:15.123290"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.126371 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.127764 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.129514 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク63"], ["created_at", "2022-06-09 07:11:15.128996"], ["updated_at", "2022-06-09 07:11:15.128996"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.131328 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.132350 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.134330 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク64"], ["created_at", "2022-06-09 07:11:15.133800"], ["updated_at", "2022-06-09 07:11:15.133800"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.137116 #30] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.139359 #30] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.141653 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク65"], ["created_at", "2022-06-09 07:11:15.141067"], ["updated_at", "2022-06-09 07:11:15.141067"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.143716 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.144806 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.146232 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク66"], ["created_at", "2022-06-09 07:11:15.145734"], ["updated_at", "2022-06-09 07:11:15.145734"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.148751 #30] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.150083 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.151952 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク67"], ["created_at", "2022-06-09 07:11:15.151204"], ["updated_at", "2022-06-09 07:11:15.151204"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.154920 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.157342 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.161320 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク68"], ["created_at", "2022-06-09 07:11:15.160739"], ["updated_at", "2022-06-09 07:11:15.160739"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.164075 #30] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.165350 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.166909 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク69"], ["created_at", "2022-06-09 07:11:15.166369"], ["updated_at", "2022-06-09 07:11:15.166369"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.169260 #30] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.172184 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.174136 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク70"], ["created_at", "2022-06-09 07:11:15.173518"], ["updated_at", "2022-06-09 07:11:15.173518"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.176446 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.177713 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.179172 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク71"], ["created_at", "2022-06-09 07:11:15.178655"], ["updated_at", "2022-06-09 07:11:15.178655"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.181235 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.182331 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.183968 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク72"], ["created_at", "2022-06-09 07:11:15.183446"], ["updated_at", "2022-06-09 07:11:15.183446"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.187081 #30] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.190016 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.191762 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク73"], ["created_at", "2022-06-09 07:11:15.191191"], ["updated_at", "2022-06-09 07:11:15.191191"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.193748 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.194987 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.196383 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク74"], ["created_at", "2022-06-09 07:11:15.195893"], ["updated_at", "2022-06-09 07:11:15.195893"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.199325 #30] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.200690 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.202844 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク75"], ["created_at", "2022-06-09 07:11:15.202107"], ["updated_at", "2022-06-09 07:11:15.202107"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.207407 #30] DEBUG -- :   [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.208713 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.210269 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク76"], ["created_at", "2022-06-09 07:11:15.209728"], ["updated_at", "2022-06-09 07:11:15.209728"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.212186 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.213479 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.214999 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク77"], ["created_at", "2022-06-09 07:11:15.214492"], ["updated_at", "2022-06-09 07:11:15.214492"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.216861 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.218272 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.220916 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク78"], ["created_at", "2022-06-09 07:11:15.219568"], ["updated_at", "2022-06-09 07:11:15.219568"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.223758 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.225149 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.226702 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク79"], ["created_at", "2022-06-09 07:11:15.226126"], ["updated_at", "2022-06-09 07:11:15.226126"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.228996 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.230307 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.231962 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク80"], ["created_at", "2022-06-09 07:11:15.231302"], ["updated_at", "2022-06-09 07:11:15.231302"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.233951 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.236128 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.239170 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク81"], ["created_at", "2022-06-09 07:11:15.238542"], ["updated_at", "2022-06-09 07:11:15.238542"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.240995 #30] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.242169 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.243918 #30] DEBUG -- :   [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク82"], ["created_at", "2022-06-09 07:11:15.243072"], ["updated_at", "2022-06-09 07:11:15.243072"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.245718 #30] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.247129 #30] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.248573 #30] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク83"], ["created_at", "2022-06-09 07:11:15.248105"], ["updated_at", "2022-06-09 07:11:15.248105"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.251323 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.252719 #30] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.255819 #30] DEBUG -- :   [1m[36mTask Create (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク84"], ["created_at", "2022-06-09 07:11:15.254298"], ["updated_at", "2022-06-09 07:11:15.254298"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.259426 #30] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.261335 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.263215 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク85"], ["created_at", "2022-06-09 07:11:15.262674"], ["updated_at", "2022-06-09 07:11:15.262674"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.265479 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.266840 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.268853 #30] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク86"], ["created_at", "2022-06-09 07:11:15.268134"], ["updated_at", "2022-06-09 07:11:15.268134"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.272824 #30] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.274379 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.276073 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク87"], ["created_at", "2022-06-09 07:11:15.275496"], ["updated_at", "2022-06-09 07:11:15.275496"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.278136 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.279197 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.293138 #30] DEBUG -- :   [1m[36mTask Create (12.8ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク88"], ["created_at", "2022-06-09 07:11:15.280010"], ["updated_at", "2022-06-09 07:11:15.280010"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.295006 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.296442 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.297797 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク89"], ["created_at", "2022-06-09 07:11:15.297278"], ["updated_at", "2022-06-09 07:11:15.297278"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.299928 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.301555 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.303689 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク90"], ["created_at", "2022-06-09 07:11:15.302961"], ["updated_at", "2022-06-09 07:11:15.302961"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.307561 #30] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.308970 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.310971 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク91"], ["created_at", "2022-06-09 07:11:15.310375"], ["updated_at", "2022-06-09 07:11:15.310375"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.313389 #30] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.314524 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.316133 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク92"], ["created_at", "2022-06-09 07:11:15.315525"], ["updated_at", "2022-06-09 07:11:15.315525"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.318251 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.321467 #30] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.341252 #30] DEBUG -- :   [1m[36mTask Create (8.8ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク93"], ["created_at", "2022-06-09 07:11:15.331995"], ["updated_at", "2022-06-09 07:11:15.331995"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.360930 #30] DEBUG -- :   [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.365842 #30] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.371014 #30] DEBUG -- :   [1m[36mTask Create (1.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク94"], ["created_at", "2022-06-09 07:11:15.368088"], ["updated_at", "2022-06-09 07:11:15.368088"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.375146 #30] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.376592 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.378405 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク95"], ["created_at", "2022-06-09 07:11:15.377833"], ["updated_at", "2022-06-09 07:11:15.377833"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.380569 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.382487 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.384457 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク96"], ["created_at", "2022-06-09 07:11:15.383801"], ["updated_at", "2022-06-09 07:11:15.383801"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.387879 #30] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.389214 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.390643 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク97"], ["created_at", "2022-06-09 07:11:15.390033"], ["updated_at", "2022-06-09 07:11:15.390033"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.392849 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.394038 #30] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.395582 #30] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク98"], ["created_at", "2022-06-09 07:11:15.394931"], ["updated_at", "2022-06-09 07:11:15.394931"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.397943 #30] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:11:15.400255 #30] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:11:15.402868 #30] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク99"], ["created_at", "2022-06-09 07:11:15.401911"], ["updated_at", "2022-06-09 07:11:15.401911"], ["user_id", 1]]
+D, [2022-06-09T07:11:15.405227 #30] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2022-06-09T07:11:39.000893 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:11:39 +0000
+I, [2022-06-09T07:11:39.002482 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-09T07:11:39.098448 #1] DEBUG -- :   [1m[35m (9.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-09T07:11:39.099459 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-06-09T07:11:39.158541 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:11:39.197176 #1] DEBUG -- :   [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:11:39.198534 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:11:39.364137 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:11:39.488829 #1] DEBUG -- :   [1m[35m (6.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:11:39.489483 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:11:39.512136 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:11:39.513832 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:11:39.525929 #1] DEBUG -- :   [1m[36mTask Load (8.1ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:11:39.526644 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+I, [2022-06-09T07:11:39.547867 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (183.2ms)
+I, [2022-06-09T07:11:40.374692 #1]  INFO -- : Completed 200 OK in 1215ms (Views: 1063.5ms | ActiveRecord: 33.1ms)
+
+
+I, [2022-06-09T07:11:40.409918 #1]  INFO -- : Started GET "/assets/application.self-20ef19ede69869a10b8ee6c192a59a3b6fa39b337d51a478e494bd8a46dea8f8.css?body=1" for 192.168.112.1 at 2022-06-09 07:11:40 +0000
+I, [2022-06-09T07:11:40.410946 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-06-09T07:12:05.899941 #1] DEBUG -- :   [1m[35m (3.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5790848985702910395)[0m
+D, [2022-06-09T07:12:05.900655 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.924067 #1] DEBUG -- :   [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-09T07:12:05.924546 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.934398 #1] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (6.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2022-06-09T07:12:05.935015 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.937806 #1] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:12:05.938582 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.940782 #1] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:12:05.941379 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.942323 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5790848985702910395)[0m
+D, [2022-06-09T07:12:05.942785 #1] DEBUG -- :   ↳ bin/rails:9
+D, [2022-06-09T07:12:05.946690 #1] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-06-09T07:12:05.947371 #1] DEBUG -- :   ↳ bin/rails:9
+I, [2022-06-09T07:12:11.469787 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:12:11 +0000
+I, [2022-06-09T07:12:11.474591 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:11.602380 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:12:11.633170 #1] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:12:11.634193 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:12:11.771630 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:12:11.781002 #1] DEBUG -- :   [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:12:11.781804 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:12:11.809625 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:11.810617 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:12:11.813186 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:11.814176 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+I, [2022-06-09T07:12:11.832219 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (59.6ms)
+I, [2022-06-09T07:12:11.897329 #1]  INFO -- : Completed 200 OK in 294ms (Views: 189.9ms | ActiveRecord: 8.4ms)
+
+
+I, [2022-06-09T07:12:12.442939 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:12:12 +0000
+I, [2022-06-09T07:12:12.447085 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:12.455020 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:12:12.461198 #1] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:12:12.464676 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:12:12.586426 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:12:12.591321 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:12:12.592685 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:12:12.620922 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:12.621780 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:12:12.624028 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:12.625646 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+I, [2022-06-09T07:12:12.627193 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (39.7ms)
+I, [2022-06-09T07:12:12.691992 #1]  INFO -- : Completed 200 OK in 234ms (Views: 176.5ms | ActiveRecord: 1.8ms)
+
+
+I, [2022-06-09T07:12:20.078263 #1]  INFO -- : Started DELETE "/logout" for 192.168.112.1 at 2022-06-09 07:12:20 +0000
+I, [2022-06-09T07:12:20.082148 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:20.115223 #1]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2022-06-09T07:12:20.116722 #1]  INFO -- :   Parameters: {"authenticity_token"=>"26QIpq3wVbHBzn42BjXbN6tLN/H6qhu8hfS5qdP3mePne4qNiDtNau3z6221ZHC8TVOZLS+XCzA1vqHOSSl29Q=="}
+I, [2022-06-09T07:12:20.119512 #1]  INFO -- : Redirected to http://localhost:3000/
+I, [2022-06-09T07:12:20.120927 #1]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:12:20.130177 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:12:20 +0000
+I, [2022-06-09T07:12:20.131976 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:20.134425 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:12:20.136271 #1]  INFO -- : Redirected to http://localhost:3000/login
+I, [2022-06-09T07:12:20.137497 #1]  INFO -- : Filter chain halted as :login_required rendered or redirected
+I, [2022-06-09T07:12:20.138914 #1]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:12:20.145814 #1]  INFO -- : Started GET "/login" for 192.168.112.1 at 2022-06-09 07:12:20 +0000
+I, [2022-06-09T07:12:20.146998 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:20.148876 #1]  INFO -- : Processing by SessionsController#new as HTML
+I, [2022-06-09T07:12:20.254795 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:12:20.258119 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (2.6ms)
+I, [2022-06-09T07:12:20.320455 #1]  INFO -- : Completed 200 OK in 171ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:12:24.662022 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:12:24 +0000
+I, [2022-06-09T07:12:24.665347 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:24.670923 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:12:24.673371 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST4IeVLBOuKrq75Y/D7i8mWVNxlAQpujeObqqZy54e9tGAn4Ta+nKPHWAUds9iHc01UpYHVFBtGfS3q2uEWAWw==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:12:24.681437 #1] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:12:24.684527 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:12:24.937810 #1]  INFO -- : Redirected to http://localhost:3000/
+I, [2022-06-09T07:12:24.939367 #1]  INFO -- : Completed 302 Found in 264ms (ActiveRecord: 1.0ms)
+
+
+I, [2022-06-09T07:12:24.947207 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:12:24 +0000
+I, [2022-06-09T07:12:24.948477 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:24.950666 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:12:24.952603 #1] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:12:24.954723 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:12:25.057036 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:12:25.061960 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:12:25.062836 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:12:25.089049 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:25.090354 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:12:25.092927 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:12:25.093952 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+I, [2022-06-09T07:12:25.095531 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (37.6ms)
+I, [2022-06-09T07:12:25.168537 #1]  INFO -- : Completed 200 OK in 217ms (Views: 184.1ms | ActiveRecord: 1.3ms)
+
+
+I, [2022-06-09T07:12:57.695646 #1]  INFO -- : Started GET "/admin/users" for 192.168.112.1 at 2022-06-09 07:12:57 +0000
+I, [2022-06-09T07:12:57.699100 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:12:57.730967 #1]  INFO -- : Processing by Admin::UsersController#index as HTML
+D, [2022-06-09T07:12:57.733473 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:12:57.734679 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:12:57.848395 #1]  INFO -- :   Rendering admin/users/index.html.slim within layouts/application
+D, [2022-06-09T07:12:57.852472 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+D, [2022-06-09T07:12:57.853258 #1] DEBUG -- :   ↳ app/views/admin/users/index.html.slim:16
+I, [2022-06-09T07:12:57.855599 #1]  INFO -- :   Rendered admin/users/index.html.slim within layouts/application (6.5ms)
+I, [2022-06-09T07:12:57.917952 #1]  INFO -- : Completed 200 OK in 186ms (Views: 141.8ms | ActiveRecord: 0.7ms)
+
+
+I, [2022-06-09T07:13:05.746248 #1]  INFO -- : Started DELETE "/logout" for 192.168.112.1 at 2022-06-09 07:13:05 +0000
+I, [2022-06-09T07:13:05.749929 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:05.754640 #1]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2022-06-09T07:13:05.757166 #1]  INFO -- :   Parameters: {"authenticity_token"=>"gWrciWbM0nNfoELd5D3DORsPKqfd/oIG+V5kEwPLxf+lTN0IeaJPuQXd/cJ09QAXrc803uj5H3Qe8/QMJzekSw=="}
+I, [2022-06-09T07:13:05.762022 #1]  INFO -- : Redirected to http://localhost:3000/
+I, [2022-06-09T07:13:05.764585 #1]  INFO -- : Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:13:05.778891 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:13:05 +0000
+I, [2022-06-09T07:13:05.782167 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:05.788562 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:13:05.791153 #1]  INFO -- : Redirected to http://localhost:3000/login
+I, [2022-06-09T07:13:05.793578 #1]  INFO -- : Filter chain halted as :login_required rendered or redirected
+I, [2022-06-09T07:13:05.795820 #1]  INFO -- : Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:13:05.807065 #1]  INFO -- : Started GET "/login" for 192.168.112.1 at 2022-06-09 07:13:05 +0000
+I, [2022-06-09T07:13:05.808669 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:05.811679 #1]  INFO -- : Processing by SessionsController#new as HTML
+I, [2022-06-09T07:13:05.919179 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:13:05.921969 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (1.9ms)
+I, [2022-06-09T07:13:05.993855 #1]  INFO -- : Completed 200 OK in 181ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:13:13.801249 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:13:13 +0000
+I, [2022-06-09T07:13:13.806069 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:13.810910 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:13:13.813035 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9jy5Qbc9GYyOiWKJQuwJNh9BZTQ/fctKvyhUFZxZVrZZid5ujQfO6IxmFZWxtS3Fi19SxQhqRosEew4tEk4Lw==", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:13:13.817637 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:13:13.820171 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:13:13.823385 #1]  INFO -- : Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+F, [2022-06-09T07:13:13.824637 #1] FATAL -- :   
+F, [2022-06-09T07:13:13.825948 #1] FATAL -- : BCrypt::Errors::InvalidHash (invalid hash):
+F, [2022-06-09T07:13:13.828037 #1] FATAL -- :   
+F, [2022-06-09T07:13:13.829779 #1] FATAL -- : app/controllers/sessions_controller.rb:9:in `create'
+I, [2022-06-09T07:13:13.869553 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T07:13:13.880139 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T07:13:13.886343 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+I, [2022-06-09T07:13:13.895442 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T07:13:13.899978 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+I, [2022-06-09T07:13:13.908536 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T07:13:13.913192 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+I, [2022-06-09T07:13:13.915336 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.1ms)
+I, [2022-06-09T07:13:20.257848 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:13:20 +0000
+I, [2022-06-09T07:13:20.261277 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:20.269244 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:13:20.272800 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9jy5Qbc9GYyOiWKJQuwJNh9BZTQ/fctKvyhUFZxZVrZZid5ujQfO6IxmFZWxtS3Fi19SxQhqRosEew4tEk4Lw==", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:13:20.277915 #1] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:13:20.284078 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:13:20.287761 #1]  INFO -- : Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms)
+
+
+F, [2022-06-09T07:13:20.290084 #1] FATAL -- :   
+F, [2022-06-09T07:13:20.292123 #1] FATAL -- : BCrypt::Errors::InvalidHash (invalid hash):
+F, [2022-06-09T07:13:20.294147 #1] FATAL -- :   
+F, [2022-06-09T07:13:20.295398 #1] FATAL -- : app/controllers/sessions_controller.rb:9:in `create'
+I, [2022-06-09T07:13:20.331046 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T07:13:20.337419 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T07:13:20.340126 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.5ms)
+I, [2022-06-09T07:13:20.344949 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T07:13:20.347018 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+I, [2022-06-09T07:13:20.352213 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T07:13:20.353646 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2022-06-09T07:13:20.354458 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.3ms)
+I, [2022-06-09T07:13:53.420481 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:13:53 +0000
+I, [2022-06-09T07:13:53.424746 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:13:53.429784 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:13:53.432871 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9jy5Qbc9GYyOiWKJQuwJNh9BZTQ/fctKvyhUFZxZVrZZid5ujQfO6IxmFZWxtS3Fi19SxQhqRosEew4tEk4Lw==", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:13:53.440392 #1] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:13:53.443198 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:13:53.446947 #1]  INFO -- : Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+F, [2022-06-09T07:13:53.449327 #1] FATAL -- :   
+F, [2022-06-09T07:13:53.451374 #1] FATAL -- : BCrypt::Errors::InvalidHash (invalid hash):
+F, [2022-06-09T07:13:53.453153 #1] FATAL -- :   
+F, [2022-06-09T07:13:53.454925 #1] FATAL -- : app/controllers/sessions_controller.rb:9:in `create'
+I, [2022-06-09T07:13:53.495640 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T07:13:53.501319 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T07:13:53.503556 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.4ms)
+I, [2022-06-09T07:13:53.508437 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T07:13:53.509988 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+I, [2022-06-09T07:13:53.516095 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T07:13:53.517427 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2022-06-09T07:13:53.518181 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+I, [2022-06-09T07:19:50.266691 #1]  INFO -- : Started GET "/login" for 192.168.112.1 at 2022-06-09 07:19:50 +0000
+I, [2022-06-09T07:19:50.272210 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:19:55.339573 #1]  INFO -- : Processing by SessionsController#new as HTML
+I, [2022-06-09T07:19:55.450360 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:19:55.453598 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (2.3ms)
+I, [2022-06-09T07:19:55.532504 #1]  INFO -- : Completed 200 OK in 191ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+I, [2022-06-09T07:20:00.519317 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:20:00 +0000
+I, [2022-06-09T07:20:00.523173 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:20:00.529265 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:20:00.532354 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"HOJ1jUtpyn6T2MdSByJPERbRCmg5DbnjAo61YYN42+w6XKAR94EhIwPTeo507yuC2IFyt/3R59QEY/gJYUCGmQ==", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:20:00.550031 #1] DEBUG -- :   [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:20:00.552330 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:20:00.555725 #1]  INFO -- : Completed 500 Internal Server Error in 19ms (ActiveRecord: 9.6ms)
+
+
+F, [2022-06-09T07:20:00.558024 #1] FATAL -- :   
+F, [2022-06-09T07:20:00.559675 #1] FATAL -- : BCrypt::Errors::InvalidHash (invalid hash):
+F, [2022-06-09T07:20:00.561597 #1] FATAL -- :   
+F, [2022-06-09T07:20:00.564355 #1] FATAL -- : app/controllers/sessions_controller.rb:9:in `create'
+I, [2022-06-09T07:20:00.597991 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T07:20:00.603297 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T07:20:00.606118 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.6ms)
+I, [2022-06-09T07:20:00.610695 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T07:20:00.612289 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+I, [2022-06-09T07:20:00.616923 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T07:20:00.618418 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+I, [2022-06-09T07:20:00.619078 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+I, [2022-06-09T07:20:59.365818 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:20:59 +0000
+I, [2022-06-09T07:20:59.369224 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:20:59.375231 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:20:59.378341 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"HOJ1jUtpyn6T2MdSByJPERbRCmg5DbnjAo61YYN42+w6XKAR94EhIwPTeo507yuC2IFyt/3R59QEY/gJYUCGmQ==", "session"=>{"email"=>"a", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:20:59.384507 #1] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a"], ["LIMIT", 1]]
+D, [2022-06-09T07:20:59.386904 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:20:59.487799 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:20:59.490666 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (1.9ms)
+I, [2022-06-09T07:20:59.553589 #1]  INFO -- : Completed 200 OK in 173ms (Views: 163.1ms | ActiveRecord: 0.9ms)
+
+
+I, [2022-06-09T07:21:04.294644 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:21:04 +0000
+I, [2022-06-09T07:21:04.297865 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:21:04.302606 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:21:04.306257 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0fm+fIgKpbHMQQQ8PunJQLfBE46IYK5Ebt55YC2gBMD3R2vgNOJO7FxKueBNJK3TeZFrUUy88HNoMzQIz5hZtQ==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:21:04.311451 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:21:04.314316 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:21:04.649775 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:21:04.652502 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (1.9ms)
+I, [2022-06-09T07:21:04.716698 #1]  INFO -- : Completed 200 OK in 408ms (Views: 148.0ms | ActiveRecord: 0.6ms)
+
+
+I, [2022-06-09T07:21:12.882278 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:21:12 +0000
+I, [2022-06-09T07:21:12.885605 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:21:12.891626 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:21:12.894548 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"DHMrTqqrAELksI2y+s9difOz9fEwGCqHf8Te2oroXEsqzf7SFkPrH3S7MG6JAjkaPeONLvTEdLB5KZOyaNABPg==", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:21:12.900533 #1] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:21:12.902868 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:21:12.907879 #1]  INFO -- : Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+
+F, [2022-06-09T07:21:12.912438 #1] FATAL -- :   
+F, [2022-06-09T07:21:12.914812 #1] FATAL -- : BCrypt::Errors::InvalidHash (invalid hash):
+F, [2022-06-09T07:21:12.917326 #1] FATAL -- :   
+F, [2022-06-09T07:21:12.919772 #1] FATAL -- : app/controllers/sessions_controller.rb:9:in `create'
+I, [2022-06-09T07:21:12.958915 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2022-06-09T07:21:12.967357 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2022-06-09T07:21:12.969388 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.4ms)
+I, [2022-06-09T07:21:12.973832 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2022-06-09T07:21:12.975145 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+I, [2022-06-09T07:21:12.979787 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2022-06-09T07:21:12.981691 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+I, [2022-06-09T07:21:12.982541 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+I, [2022-06-09T07:21:16.655630 #1]  INFO -- : Started GET "/login" for 192.168.112.1 at 2022-06-09 07:21:16 +0000
+I, [2022-06-09T07:21:16.662262 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:21:16.668375 #1]  INFO -- : Processing by SessionsController#new as HTML
+I, [2022-06-09T07:21:16.793285 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:21:16.796485 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (2.3ms)
+I, [2022-06-09T07:21:16.865428 #1]  INFO -- : Completed 200 OK in 194ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+D, [2022-06-09T07:22:47.594165 #32] DEBUG -- :   [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+D, [2022-06-09T07:23:17.987052 #32] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:23:49.776848 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:23:49.784578 #32] DEBUG -- :   [1m[36mTask Create (5.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク0"], ["created_at", "2022-06-09 07:23:49.778684"], ["updated_at", "2022-06-09 07:23:49.778684"], ["user_id", 3]]
+D, [2022-06-09T07:23:49.785840 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+D, [2022-06-09T07:24:15.058125 #32] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:15.068222 #32] DEBUG -- :   [1m[36mTask Create (2.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク0"], ["created_at", "2022-06-09 07:24:15.063152"], ["updated_at", "2022-06-09 07:24:15.063152"], ["user_id", 3]]
+D, [2022-06-09T07:24:15.072181 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+D, [2022-06-09T07:24:43.093664 #32] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:43.103537 #32] DEBUG -- :   [1m[36mTask Create (5.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスク0"], ["created_at", "2022-06-09 07:24:43.097187"], ["updated_at", "2022-06-09 07:24:43.097187"], ["user_id", 3]]
+D, [2022-06-09T07:24:43.106743 #32] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+D, [2022-06-09T07:24:57.463227 #32] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.469658 #32] DEBUG -- :   [1m[36mTask Create (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ0"], ["created_at", "2022-06-09 07:24:57.466459"], ["updated_at", "2022-06-09 07:24:57.466459"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.481230 #32] DEBUG -- :   [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.484136 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.486925 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ1"], ["created_at", "2022-06-09 07:24:57.486272"], ["updated_at", "2022-06-09 07:24:57.486272"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.489519 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.491746 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.494009 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ2"], ["created_at", "2022-06-09 07:24:57.493425"], ["updated_at", "2022-06-09 07:24:57.493425"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.497349 #32] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.499459 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.501746 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ3"], ["created_at", "2022-06-09 07:24:57.500883"], ["updated_at", "2022-06-09 07:24:57.500883"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.504101 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.505191 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.507040 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ4"], ["created_at", "2022-06-09 07:24:57.506463"], ["updated_at", "2022-06-09 07:24:57.506463"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.509503 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.511016 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.512963 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ5"], ["created_at", "2022-06-09 07:24:57.512368"], ["updated_at", "2022-06-09 07:24:57.512368"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.515071 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.517119 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.519740 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ6"], ["created_at", "2022-06-09 07:24:57.519097"], ["updated_at", "2022-06-09 07:24:57.519097"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.525966 #32] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.527483 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.530558 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ7"], ["created_at", "2022-06-09 07:24:57.529812"], ["updated_at", "2022-06-09 07:24:57.529812"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.533880 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.535717 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.538253 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ8"], ["created_at", "2022-06-09 07:24:57.537565"], ["updated_at", "2022-06-09 07:24:57.537565"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.540457 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.542094 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.543593 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ9"], ["created_at", "2022-06-09 07:24:57.543044"], ["updated_at", "2022-06-09 07:24:57.543044"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.545532 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.547048 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.548793 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ10"], ["created_at", "2022-06-09 07:24:57.548023"], ["updated_at", "2022-06-09 07:24:57.548023"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.551695 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.553190 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.554700 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ11"], ["created_at", "2022-06-09 07:24:57.554093"], ["updated_at", "2022-06-09 07:24:57.554093"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.557179 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.558763 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.560314 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ12"], ["created_at", "2022-06-09 07:24:57.559789"], ["updated_at", "2022-06-09 07:24:57.559789"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.563077 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.566978 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.569205 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ13"], ["created_at", "2022-06-09 07:24:57.568563"], ["updated_at", "2022-06-09 07:24:57.568563"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.571839 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.573140 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.574655 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ14"], ["created_at", "2022-06-09 07:24:57.574089"], ["updated_at", "2022-06-09 07:24:57.574089"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.576910 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.578509 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.580453 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ15"], ["created_at", "2022-06-09 07:24:57.579863"], ["updated_at", "2022-06-09 07:24:57.579863"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.584049 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.585416 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.586954 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ16"], ["created_at", "2022-06-09 07:24:57.586354"], ["updated_at", "2022-06-09 07:24:57.586354"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.589108 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.590750 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.592730 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ17"], ["created_at", "2022-06-09 07:24:57.592133"], ["updated_at", "2022-06-09 07:24:57.592133"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.595050 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.596719 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.599964 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ18"], ["created_at", "2022-06-09 07:24:57.598585"], ["updated_at", "2022-06-09 07:24:57.598585"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.602997 #32] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.604565 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.606212 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ19"], ["created_at", "2022-06-09 07:24:57.605600"], ["updated_at", "2022-06-09 07:24:57.605600"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.608887 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.610391 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.612006 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ20"], ["created_at", "2022-06-09 07:24:57.611413"], ["updated_at", "2022-06-09 07:24:57.611413"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.614564 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.616362 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.618048 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ21"], ["created_at", "2022-06-09 07:24:57.617441"], ["updated_at", "2022-06-09 07:24:57.617441"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.620280 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.621395 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.622833 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ22"], ["created_at", "2022-06-09 07:24:57.622261"], ["updated_at", "2022-06-09 07:24:57.622261"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.625567 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.627001 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.629112 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ23"], ["created_at", "2022-06-09 07:24:57.628356"], ["updated_at", "2022-06-09 07:24:57.628356"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.633675 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.635291 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.637086 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ24"], ["created_at", "2022-06-09 07:24:57.636497"], ["updated_at", "2022-06-09 07:24:57.636497"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.639423 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.640692 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.642222 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ25"], ["created_at", "2022-06-09 07:24:57.641653"], ["updated_at", "2022-06-09 07:24:57.641653"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.644480 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.646076 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.647580 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ26"], ["created_at", "2022-06-09 07:24:57.646991"], ["updated_at", "2022-06-09 07:24:57.646991"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.650009 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.652300 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.654128 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ27"], ["created_at", "2022-06-09 07:24:57.653443"], ["updated_at", "2022-06-09 07:24:57.653443"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.656574 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.658725 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.660502 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ28"], ["created_at", "2022-06-09 07:24:57.659848"], ["updated_at", "2022-06-09 07:24:57.659848"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.664808 #32] DEBUG -- :   [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.668907 #32] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.672270 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ29"], ["created_at", "2022-06-09 07:24:57.671573"], ["updated_at", "2022-06-09 07:24:57.671573"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.674773 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.676094 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.677517 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ30"], ["created_at", "2022-06-09 07:24:57.676973"], ["updated_at", "2022-06-09 07:24:57.676973"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.681708 #32] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.683515 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.686436 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ31"], ["created_at", "2022-06-09 07:24:57.685841"], ["updated_at", "2022-06-09 07:24:57.685841"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.688865 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.690350 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.692366 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ32"], ["created_at", "2022-06-09 07:24:57.691813"], ["updated_at", "2022-06-09 07:24:57.691813"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.694957 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.696269 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.698132 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ33"], ["created_at", "2022-06-09 07:24:57.697362"], ["updated_at", "2022-06-09 07:24:57.697362"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.700647 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.701828 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.703179 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ34"], ["created_at", "2022-06-09 07:24:57.702609"], ["updated_at", "2022-06-09 07:24:57.702609"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.705721 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.707549 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.709392 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ35"], ["created_at", "2022-06-09 07:24:57.708813"], ["updated_at", "2022-06-09 07:24:57.708813"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.712094 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.713732 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.716346 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ36"], ["created_at", "2022-06-09 07:24:57.715716"], ["updated_at", "2022-06-09 07:24:57.715716"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.718672 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.719851 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.721475 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ37"], ["created_at", "2022-06-09 07:24:57.720777"], ["updated_at", "2022-06-09 07:24:57.720777"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.724249 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.725869 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.727939 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ38"], ["created_at", "2022-06-09 07:24:57.727298"], ["updated_at", "2022-06-09 07:24:57.727298"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.732709 #32] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.734415 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.736165 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ39"], ["created_at", "2022-06-09 07:24:57.735480"], ["updated_at", "2022-06-09 07:24:57.735480"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.738461 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.740147 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.742138 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ40"], ["created_at", "2022-06-09 07:24:57.741524"], ["updated_at", "2022-06-09 07:24:57.741524"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.744476 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.746734 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.749717 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ41"], ["created_at", "2022-06-09 07:24:57.749035"], ["updated_at", "2022-06-09 07:24:57.749035"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.752087 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.753151 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.754531 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ42"], ["created_at", "2022-06-09 07:24:57.753980"], ["updated_at", "2022-06-09 07:24:57.753980"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.756700 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.757852 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.759461 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ43"], ["created_at", "2022-06-09 07:24:57.758919"], ["updated_at", "2022-06-09 07:24:57.758919"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.761734 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.763136 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.764925 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ44"], ["created_at", "2022-06-09 07:24:57.764283"], ["updated_at", "2022-06-09 07:24:57.764283"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.770081 #32] DEBUG -- :   [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.772074 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.773873 #32] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ45"], ["created_at", "2022-06-09 07:24:57.773019"], ["updated_at", "2022-06-09 07:24:57.773019"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.776555 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.777804 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.780312 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ46"], ["created_at", "2022-06-09 07:24:57.779142"], ["updated_at", "2022-06-09 07:24:57.779142"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.784045 #32] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.785235 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.786584 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ47"], ["created_at", "2022-06-09 07:24:57.786064"], ["updated_at", "2022-06-09 07:24:57.786064"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.788851 #32] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.790539 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.792466 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ48"], ["created_at", "2022-06-09 07:24:57.791880"], ["updated_at", "2022-06-09 07:24:57.791880"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.794934 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.796522 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.798958 #32] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ49"], ["created_at", "2022-06-09 07:24:57.798054"], ["updated_at", "2022-06-09 07:24:57.798054"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.801918 #32] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.803304 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.805274 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ50"], ["created_at", "2022-06-09 07:24:57.804716"], ["updated_at", "2022-06-09 07:24:57.804716"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.807556 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.809071 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.810825 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ51"], ["created_at", "2022-06-09 07:24:57.810288"], ["updated_at", "2022-06-09 07:24:57.810288"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.813939 #32] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.816323 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.818217 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ52"], ["created_at", "2022-06-09 07:24:57.817429"], ["updated_at", "2022-06-09 07:24:57.817429"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.820842 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.822378 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.824734 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ53"], ["created_at", "2022-06-09 07:24:57.824144"], ["updated_at", "2022-06-09 07:24:57.824144"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.826781 #32] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.828498 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.830905 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ54"], ["created_at", "2022-06-09 07:24:57.830145"], ["updated_at", "2022-06-09 07:24:57.830145"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.834952 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.836292 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.837913 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ55"], ["created_at", "2022-06-09 07:24:57.837288"], ["updated_at", "2022-06-09 07:24:57.837288"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.840450 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.842988 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.845326 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ56"], ["created_at", "2022-06-09 07:24:57.844496"], ["updated_at", "2022-06-09 07:24:57.844496"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.848666 #32] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.851778 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.853878 #32] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ57"], ["created_at", "2022-06-09 07:24:57.853010"], ["updated_at", "2022-06-09 07:24:57.853010"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.856052 #32] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.857295 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.859023 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ58"], ["created_at", "2022-06-09 07:24:57.858427"], ["updated_at", "2022-06-09 07:24:57.858427"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.862152 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.863995 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.867609 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ59"], ["created_at", "2022-06-09 07:24:57.866915"], ["updated_at", "2022-06-09 07:24:57.866915"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.870992 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.872750 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.874793 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ60"], ["created_at", "2022-06-09 07:24:57.874064"], ["updated_at", "2022-06-09 07:24:57.874064"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.877335 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.879040 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.881366 #32] DEBUG -- :   [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ61"], ["created_at", "2022-06-09 07:24:57.880355"], ["updated_at", "2022-06-09 07:24:57.880355"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.884561 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.886124 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.887604 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ62"], ["created_at", "2022-06-09 07:24:57.887067"], ["updated_at", "2022-06-09 07:24:57.887067"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.889913 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.891087 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.892656 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ63"], ["created_at", "2022-06-09 07:24:57.891973"], ["updated_at", "2022-06-09 07:24:57.891973"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.894875 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.897425 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.899480 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ64"], ["created_at", "2022-06-09 07:24:57.898876"], ["updated_at", "2022-06-09 07:24:57.898876"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.901488 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.903221 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.905189 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ65"], ["created_at", "2022-06-09 07:24:57.904654"], ["updated_at", "2022-06-09 07:24:57.904654"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.907067 #32] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.908515 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.910026 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ66"], ["created_at", "2022-06-09 07:24:57.909454"], ["updated_at", "2022-06-09 07:24:57.909454"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.912489 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.915347 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.918078 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ67"], ["created_at", "2022-06-09 07:24:57.917413"], ["updated_at", "2022-06-09 07:24:57.917413"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.920706 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.922133 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.923909 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ68"], ["created_at", "2022-06-09 07:24:57.923288"], ["updated_at", "2022-06-09 07:24:57.923288"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.926601 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.928003 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.929742 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ69"], ["created_at", "2022-06-09 07:24:57.929130"], ["updated_at", "2022-06-09 07:24:57.929130"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.934859 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.936273 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.938103 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ70"], ["created_at", "2022-06-09 07:24:57.937474"], ["updated_at", "2022-06-09 07:24:57.937474"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.941009 #32] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.942707 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.944821 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ71"], ["created_at", "2022-06-09 07:24:57.944187"], ["updated_at", "2022-06-09 07:24:57.944187"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.949007 #32] DEBUG -- :   [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.950531 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.952172 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ72"], ["created_at", "2022-06-09 07:24:57.951499"], ["updated_at", "2022-06-09 07:24:57.951499"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.954214 #32] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.955820 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.957590 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ73"], ["created_at", "2022-06-09 07:24:57.957019"], ["updated_at", "2022-06-09 07:24:57.957019"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.960010 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.961585 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.963745 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ74"], ["created_at", "2022-06-09 07:24:57.963037"], ["updated_at", "2022-06-09 07:24:57.963037"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.967689 #32] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.969931 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.973758 #32] DEBUG -- :   [1m[36mTask Create (1.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ75"], ["created_at", "2022-06-09 07:24:57.971366"], ["updated_at", "2022-06-09 07:24:57.971366"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.976351 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.977587 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.978918 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ76"], ["created_at", "2022-06-09 07:24:57.978357"], ["updated_at", "2022-06-09 07:24:57.978357"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.981514 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.984328 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.985812 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ77"], ["created_at", "2022-06-09 07:24:57.985231"], ["updated_at", "2022-06-09 07:24:57.985231"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.988354 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.990140 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.991807 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ78"], ["created_at", "2022-06-09 07:24:57.991112"], ["updated_at", "2022-06-09 07:24:57.991112"], ["user_id", 3]]
+D, [2022-06-09T07:24:57.994086 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:57.995709 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:57.997476 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ79"], ["created_at", "2022-06-09 07:24:57.996681"], ["updated_at", "2022-06-09 07:24:57.996681"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.000293 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.001393 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.002778 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ80"], ["created_at", "2022-06-09 07:24:58.002224"], ["updated_at", "2022-06-09 07:24:58.002224"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.004984 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.008015 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.010015 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ81"], ["created_at", "2022-06-09 07:24:58.009392"], ["updated_at", "2022-06-09 07:24:58.009392"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.012467 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.014269 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.017342 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ82"], ["created_at", "2022-06-09 07:24:58.016587"], ["updated_at", "2022-06-09 07:24:58.016587"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.020437 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.021954 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.023762 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ83"], ["created_at", "2022-06-09 07:24:58.023045"], ["updated_at", "2022-06-09 07:24:58.023045"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.026397 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.028039 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.029799 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ84"], ["created_at", "2022-06-09 07:24:58.029167"], ["updated_at", "2022-06-09 07:24:58.029167"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.034025 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.035660 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.037043 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ85"], ["created_at", "2022-06-09 07:24:58.036460"], ["updated_at", "2022-06-09 07:24:58.036460"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.039432 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.041046 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.042589 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ86"], ["created_at", "2022-06-09 07:24:58.042037"], ["updated_at", "2022-06-09 07:24:58.042037"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.045721 #32] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.048027 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.050605 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ87"], ["created_at", "2022-06-09 07:24:58.049951"], ["updated_at", "2022-06-09 07:24:58.049951"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.052876 #32] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.054057 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.055399 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ88"], ["created_at", "2022-06-09 07:24:58.054864"], ["updated_at", "2022-06-09 07:24:58.054864"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.057139 #32] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.058130 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.059468 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ89"], ["created_at", "2022-06-09 07:24:58.058952"], ["updated_at", "2022-06-09 07:24:58.058952"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.061269 #32] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.062657 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.064144 #32] DEBUG -- :   [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ90"], ["created_at", "2022-06-09 07:24:58.063574"], ["updated_at", "2022-06-09 07:24:58.063574"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.066785 #32] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.068726 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.071464 #32] DEBUG -- :   [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ91"], ["created_at", "2022-06-09 07:24:58.070528"], ["updated_at", "2022-06-09 07:24:58.070528"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.074379 #32] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.075975 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.078807 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ92"], ["created_at", "2022-06-09 07:24:58.078187"], ["updated_at", "2022-06-09 07:24:58.078187"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.092662 #32] DEBUG -- :   [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.103985 #32] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.118196 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ93"], ["created_at", "2022-06-09 07:24:58.117368"], ["updated_at", "2022-06-09 07:24:58.117368"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.124563 #32] DEBUG -- :   [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.126990 #32] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.128723 #32] DEBUG -- :   [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ94"], ["created_at", "2022-06-09 07:24:58.127945"], ["updated_at", "2022-06-09 07:24:58.127945"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.135309 #32] DEBUG -- :   [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.136986 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.138548 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ95"], ["created_at", "2022-06-09 07:24:58.138016"], ["updated_at", "2022-06-09 07:24:58.138016"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.140787 #32] DEBUG -- :   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.141930 #32] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.143339 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ96"], ["created_at", "2022-06-09 07:24:58.142815"], ["updated_at", "2022-06-09 07:24:58.142815"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.145597 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.147137 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.149774 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ97"], ["created_at", "2022-06-09 07:24:58.149133"], ["updated_at", "2022-06-09 07:24:58.149133"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.152040 #32] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.153794 #32] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.155372 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ98"], ["created_at", "2022-06-09 07:24:58.154781"], ["updated_at", "2022-06-09 07:24:58.154781"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.157769 #32] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-06-09T07:24:58.159754 #32] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-06-09T07:24:58.161709 #32] DEBUG -- :   [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "サンプルタスクよ99"], ["created_at", "2022-06-09 07:24:58.161119"], ["updated_at", "2022-06-09 07:24:58.161119"], ["user_id", 3]]
+D, [2022-06-09T07:24:58.166264 #32] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2022-06-09T07:25:03.812992 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:25:03 +0000
+I, [2022-06-09T07:25:03.817237 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:25:03.824365 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:25:03.829387 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hv7zhjiTBqZFzWJGmZaw8S1ET32zy5h2Iy9MRCDjIBM4QCYahHvt+9XG35rqW9Ri4xQ3oncXxkElwgEswtt9Zg==", "session"=>{"email"=>"ad", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:25:03.832490 #1] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ad"], ["LIMIT", 1]]
+D, [2022-06-09T07:25:03.833539 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:25:03.907759 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-06-09T07:25:03.911816 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (3.3ms)
+I, [2022-06-09T07:25:03.978419 #1]  INFO -- : Completed 200 OK in 148ms (Views: 143.4ms | ActiveRecord: 0.3ms)
+
+
+I, [2022-06-09T07:25:09.108585 #1]  INFO -- : Started POST "/login" for 192.168.112.1 at 2022-06-09 07:25:09 +0000
+I, [2022-06-09T07:25:09.113091 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:25:09.118952 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-06-09T07:25:09.122557 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"12tDLER2lGLo/9sFvUELE1mEbvGChpsMZs3G41IJQrLx1Zaw+J5/P3j0ZtnOjG+Al9QWLkZaxTtgIIuLsDEfxw==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-06-09T07:25:09.127142 #1] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+D, [2022-06-09T07:25:09.128360 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-06-09T07:25:09.368272 #1]  INFO -- : Redirected to http://localhost:3000/
+I, [2022-06-09T07:25:09.369422 #1]  INFO -- : Completed 302 Found in 244ms (ActiveRecord: 0.3ms)
+
+
+I, [2022-06-09T07:25:09.376369 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:25:09 +0000
+I, [2022-06-09T07:25:09.377383 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:25:09.379011 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:25:09.381675 #1] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:25:09.382685 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:25:09.477508 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:25:09.488135 #1] DEBUG -- :   [1m[35m (5.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:25:09.488920 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:25:09.694879 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:25:09.695859 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:25:09.699722 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:25:09.701400 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:25:09.707220 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (228.8ms)
+I, [2022-06-09T07:25:09.789045 #1]  INFO -- : Completed 200 OK in 409ms (Views: 372.9ms | ActiveRecord: 7.1ms)
+
+
+I, [2022-06-09T07:25:16.176857 #1]  INFO -- : Started GET "/?page=2" for 192.168.112.1 at 2022-06-09 07:25:16 +0000
+I, [2022-06-09T07:25:16.179941 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:25:16.185328 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:25:16.188378 #1]  INFO -- :   Parameters: {"page"=>"2"}
+D, [2022-06-09T07:25:16.192599 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:25:16.193720 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:25:16.287101 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:25:16.291755 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:25:16.292864 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:25:16.526565 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:25:16.527442 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:25:16.528928 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:25:16.530132 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:25:16.535650 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (247.8ms)
+I, [2022-06-09T07:25:16.609138 #1]  INFO -- : Completed 200 OK in 418ms (Views: 385.5ms | ActiveRecord: 1.3ms)
+
+
+W, [2022-06-09T07:27:53.460230 #30]  WARN -- : DEPRECATION WARNING: The -e option is deprecated and will be removed in the near future. Please use the html2slim gem or the html2haml gem to convert erb templates manually. (called from <top (required)> at /todo/bin/rails:9)
+I, [2022-06-09T07:28:02.843786 #1]  INFO -- : Started GET "/?page=2" for 192.168.112.1 at 2022-06-09 07:28:02 +0000
+I, [2022-06-09T07:28:02.847531 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:02.857102 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:02.859982 #1]  INFO -- :   Parameters: {"page"=>"2"}
+D, [2022-06-09T07:28:02.864141 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:02.867289 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:02.997959 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:03.010973 #1] DEBUG -- :   [1m[35m (5.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:03.011895 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:03.279122 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:28:03.280038 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:03.281442 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:28:03.282970 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:03.288016 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (289.0ms)
+I, [2022-06-09T07:28:03.355616 #1]  INFO -- : Completed 200 OK in 494ms (Views: 429.8ms | ActiveRecord: 6.7ms)
+
+
+I, [2022-06-09T07:28:08.750759 #1]  INFO -- : Started GET "/?page=3" for 192.168.112.1 at 2022-06-09 07:28:08 +0000
+I, [2022-06-09T07:28:08.754641 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:08.762096 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:08.764213 #1]  INFO -- :   Parameters: {"page"=>"3"}
+D, [2022-06-09T07:28:08.768853 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:08.770622 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:08.898566 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:08.908661 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:08.909803 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:09.176357 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 50]]
+D, [2022-06-09T07:28:09.177766 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:09.179128 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 50]]
+D, [2022-06-09T07:28:09.179953 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:09.183952 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (284.4ms)
+I, [2022-06-09T07:28:09.250710 #1]  INFO -- : Completed 200 OK in 484ms (Views: 429.9ms | ActiveRecord: 1.5ms)
+
+
+I, [2022-06-09T07:28:09.875029 #1]  INFO -- : Started GET "/?page=4" for 192.168.112.1 at 2022-06-09 07:28:09 +0000
+I, [2022-06-09T07:28:09.879193 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:09.884762 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:09.887456 #1]  INFO -- :   Parameters: {"page"=>"4"}
+D, [2022-06-09T07:28:09.892194 #1] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:09.895014 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:10.018777 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:10.023758 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:10.025105 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:10.324380 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:10.325586 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:10.327707 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:10.329704 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:10.334205 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (314.5ms)
+I, [2022-06-09T07:28:10.408376 #1]  INFO -- : Completed 200 OK in 519ms (Views: 468.6ms | ActiveRecord: 2.4ms)
+
+
+I, [2022-06-09T07:28:11.384625 #1]  INFO -- : Started GET "/" for 192.168.112.1 at 2022-06-09 07:28:11 +0000
+I, [2022-06-09T07:28:11.387616 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:11.393644 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-06-09T07:28:11.398705 #1] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:11.401011 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:11.525904 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:11.530763 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:11.531504 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:11.738078 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:28:11.738877 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:11.740517 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-06-09T07:28:11.741254 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:11.745834 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (218.7ms)
+I, [2022-06-09T07:28:11.818068 #1]  INFO -- : Completed 200 OK in 422ms (Views: 365.6ms | ActiveRecord: 1.9ms)
+
+
+I, [2022-06-09T07:28:13.329870 #1]  INFO -- : Started GET "/?page=2" for 192.168.112.1 at 2022-06-09 07:28:13 +0000
+I, [2022-06-09T07:28:13.337862 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:13.344199 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:13.348042 #1]  INFO -- :   Parameters: {"page"=>"2"}
+D, [2022-06-09T07:28:13.351691 #1] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:13.353520 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:13.470453 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:13.475220 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:13.476686 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:13.744737 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:28:13.745841 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:13.747641 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-06-09T07:28:13.748363 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:13.753829 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (282.7ms)
+I, [2022-06-09T07:28:13.830039 #1]  INFO -- : Completed 200 OK in 480ms (Views: 434.4ms | ActiveRecord: 1.7ms)
+
+
+I, [2022-06-09T07:28:15.507195 #1]  INFO -- : Started GET "/?page=4" for 192.168.112.1 at 2022-06-09 07:28:15 +0000
+I, [2022-06-09T07:28:15.511768 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:15.517964 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:15.521082 #1]  INFO -- :   Parameters: {"page"=>"4"}
+D, [2022-06-09T07:28:15.526208 #1] DEBUG -- :   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:15.528908 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:15.646334 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:15.651483 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:15.652390 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:15.951183 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:15.952024 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:15.953324 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:15.954063 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:15.959486 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (312.2ms)
+I, [2022-06-09T07:28:16.038604 #1]  INFO -- : Completed 200 OK in 515ms (Views: 464.9ms | ActiveRecord: 1.9ms)
+
+
+I, [2022-06-09T07:28:16.223971 #1]  INFO -- : Started GET "/?page=5" for 192.168.112.1 at 2022-06-09 07:28:16 +0000
+I, [2022-06-09T07:28:16.229117 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:16.233377 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:16.235185 #1]  INFO -- :   Parameters: {"page"=>"5"}
+D, [2022-06-09T07:28:16.237855 #1] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:16.239445 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:16.359676 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:16.364382 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:16.365143 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:16.595085 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:16.595980 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:16.597127 #1] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:16.598060 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:16.600156 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (239.6ms)
+I, [2022-06-09T07:28:16.668413 #1]  INFO -- : Completed 200 OK in 432ms (Views: 383.9ms | ActiveRecord: 1.4ms)
+
+
+I, [2022-06-09T07:28:18.407565 #1]  INFO -- : Started GET "/?page=4" for 192.168.112.1 at 2022-06-09 07:28:18 +0000
+I, [2022-06-09T07:28:18.411712 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:18.418687 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:18.422171 #1]  INFO -- :   Parameters: {"page"=>"4"}
+D, [2022-06-09T07:28:18.427142 #1] DEBUG -- :   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:18.428942 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:18.553841 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:18.558459 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:18.559346 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:18.843037 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:18.844331 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:18.846201 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 75]]
+D, [2022-06-09T07:28:18.847107 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:18.851084 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (296.4ms)
+I, [2022-06-09T07:28:18.915979 #1]  INFO -- : Completed 200 OK in 491ms (Views: 444.6ms | ActiveRecord: 1.8ms)
+
+
+I, [2022-06-09T07:28:19.146932 #1]  INFO -- : Started GET "/?page=5" for 192.168.112.1 at 2022-06-09 07:28:19 +0000
+I, [2022-06-09T07:28:19.152217 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:19.160179 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:19.162005 #1]  INFO -- :   Parameters: {"page"=>"5"}
+D, [2022-06-09T07:28:19.165647 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:19.167544 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:19.293431 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:19.298321 #1] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:19.299358 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:19.520466 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:19.521164 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:19.522781 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:19.523733 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:19.526202 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (231.7ms)
+I, [2022-06-09T07:28:19.607544 #1]  INFO -- : Completed 200 OK in 443ms (Views: 390.7ms | ActiveRecord: 1.6ms)
+
+
+I, [2022-06-09T07:28:19.786193 #1]  INFO -- : Started GET "/?page=3" for 192.168.112.1 at 2022-06-09 07:28:19 +0000
+I, [2022-06-09T07:28:19.793805 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:19.800992 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:19.803897 #1]  INFO -- :   Parameters: {"page"=>"3"}
+D, [2022-06-09T07:28:19.807813 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:19.809687 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:19.919096 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:19.923976 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:19.925108 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:20.257498 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 50]]
+D, [2022-06-09T07:28:20.258462 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:20.259921 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 50]]
+D, [2022-06-09T07:28:20.260781 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:20.264804 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (344.9ms)
+I, [2022-06-09T07:28:20.329424 #1]  INFO -- : Started GET "/?page=5" for 192.168.112.1 at 2022-06-09 07:28:20 +0000
+I, [2022-06-09T07:28:20.335146 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T07:28:20.341804 #1]  INFO -- : Completed 200 OK in 536ms (Views: 491.6ms | ActiveRecord: 1.6ms)
+
+
+I, [2022-06-09T07:28:25.392304 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T07:28:25.393425 #1]  INFO -- :   Parameters: {"page"=>"5"}
+D, [2022-06-09T07:28:25.399385 #1] DEBUG -- :   [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T07:28:25.400477 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T07:28:25.510062 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T07:28:25.519380 #1] DEBUG -- :   [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T07:28:25.520428 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T07:28:25.730872 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:25.731611 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T07:28:25.733437 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T07:28:25.734084 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T07:28:25.736046 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (225.0ms)
+I, [2022-06-09T07:28:25.799886 #1]  INFO -- : Completed 200 OK in 405ms (Views: 356.1ms | ActiveRecord: 9.1ms)
+
+
+I, [2022-06-09T08:41:53.627674 #1]  INFO -- : Started GET "/?page=5" for 192.168.112.1 at 2022-06-09 08:41:53 +0000
+I, [2022-06-09T08:41:53.634166 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-06-09T08:41:53.703466 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-06-09T08:41:53.704799 #1]  INFO -- :   Parameters: {"page"=>"5"}
+D, [2022-06-09T08:41:53.713427 #1] DEBUG -- :   [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-06-09T08:41:53.714582 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-06-09T08:41:53.830026 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-06-09T08:41:53.851180 #1] DEBUG -- :   [1m[35m (7.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 3]]
+D, [2022-06-09T08:41:53.852139 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:19
+D, [2022-06-09T08:41:54.091186 #1] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T08:41:54.092330 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+D, [2022-06-09T08:41:54.094733 #1] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 100]]
+D, [2022-06-09T08:41:54.095649 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:20
+I, [2022-06-09T08:41:54.099392 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (268.6ms)
+I, [2022-06-09T08:41:55.187070 #1]  INFO -- : Completed 200 OK in 1481ms (Views: 1428.9ms | ActiveRecord: 13.0ms)
+
+
+I, [2022-06-09T08:41:55.206254 #1]  INFO -- : Started GET "/assets/tasks.self-bbc5a3f3cf6d7665de136d5f5e29e3808aa1f8816a66aa4dc76b8f2c2423ad32.js?body=1" for 192.168.112.1 at 2022-06-09 08:41:55 +0000
+I, [2022-06-09T08:41:55.207488 #1]  INFO -- : Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

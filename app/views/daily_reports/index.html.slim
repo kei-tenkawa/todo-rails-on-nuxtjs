@@ -1,0 +1,21 @@
+h1.mt-3 日報作成
+
+= form_with scope: :daily_report, local: true do |f|
+  .form-group
+    = f.label :start_time, '出勤時間', class: 'control-label'
+    = f.time_field :start_time, class: 'form-control'
+  .form-group
+    = f.label :done, '本日やったこと'
+    = f.collection_select :done, @tasks,  :id, :name, {}, {:multiple => true, class: 'form-select js-searchable'}
+  .form-group
+    = f.label :schedule, '次営業日の予定'
+    = f.collection_select :schedule, @tasks,  :id, :name, {}, {:multiple => true, class: 'form-select js-searchable'}
+  .form-group
+    = f.label :comment, "コメント"
+    = f.text_area :comment, rows: 5, class: 'form-control', id: 'daily_report_comment'
+
+  = f.submit '日報生成', class: 'btn btn-primary mt-3'
+
+- unless @nippou_text.nil?
+  / = text_area_tag :nippou_text, safe_join(@nippou_text.split("\n"),tag("<br />")), {class: 'form-control  mt-3', rows: 5,  id: 'nippou_text'}
+  = safe_join(@nippou_text.split("\n"),tag(:br))
