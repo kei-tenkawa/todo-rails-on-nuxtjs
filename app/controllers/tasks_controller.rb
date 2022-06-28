@@ -22,6 +22,7 @@ class TasksController < ApplicationController
   def edit; end
 
   def create
+    @task_types = TaskType.all
     @task = Task.new(task_params.merge(user_id: current_user.id))
     if params[:back].present?
       render :new
