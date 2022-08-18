@@ -1,0 +1,62 @@
+# Logfile created on 2022-07-01 00:32:48 +0000 by logger.rb/61378
+I, [2022-07-01T00:32:48.001100 #1]  INFO -- : Started GET "/daily_report" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.032315 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:48.146370 #1]  INFO -- : Processing by DailyReportsController#index as HTML
+D, [2022-07-01T00:32:48.176507 #1] DEBUG -- :   [1m[36mUser Load (10.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-07-01T00:32:48.179342 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-07-01T00:32:48.304097 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-07-01T00:32:48.351483 #1] DEBUG -- :   [1m[36mTask Load (8.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-07-01T00:32:48.357930 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-07-01T00:32:48.368958 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (62.4ms)
+I, [2022-07-01T00:32:48.548659 #1]  INFO -- : Completed 200 OK in 400ms (Views: 323.3ms | ActiveRecord: 18.9ms)
+
+
+I, [2022-07-01T00:32:48.589672 #1]  INFO -- : Started GET "/assets/select2.self-21d68207fa3301394a06e2ca04b61aff1b31d4368025df9a372d564c77adc968.js?body=1" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.593888 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:48.591548 #1]  INFO -- : Started GET "/assets/activestorage.self-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js?body=1" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.600722 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:48.597313 #1]  INFO -- : Started GET "/assets/rails-ujs.self-81c572f39b69ead02e3f97fe43b76954a434591bc2837e3a35af212315e67569.js?body=1" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.609316 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:48.610085 #1]  INFO -- : Started GET "/assets/application.self-a1b18aa36409689ffb0c82b74473a5a3bd7ea7822558fb4f44cf809fc966c69f.css?body=1" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.616054 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:48.590679 #1]  INFO -- : Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 172.19.0.1 at 2022-07-01 00:32:48 +0000
+I, [2022-07-01T00:32:48.622582 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T00:32:49.700501 #1]  INFO -- : Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 172.19.0.1 at 2022-07-01 00:32:49 +0000
+I, [2022-07-01T00:32:49.703158 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T10:00:42.299829 #1]  INFO -- : Started GET "/daily_report" for 172.19.0.1 at 2022-07-01 10:00:42 +0000
+I, [2022-07-01T10:00:42.301341 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T10:00:42.378320 #1]  INFO -- : Processing by DailyReportsController#index as HTML
+D, [2022-07-01T10:00:42.399692 #1] DEBUG -- :   [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-07-01T10:00:42.402161 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-07-01T10:00:42.486763 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-07-01T10:00:42.522096 #1] DEBUG -- :   [1m[36mTask Load (7.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-07-01T10:00:42.524554 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-07-01T10:00:42.529025 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (41.0ms)
+I, [2022-07-01T10:00:42.704858 #1]  INFO -- : Completed 200 OK in 325ms (Views: 269.3ms | ActiveRecord: 16.0ms)
+
+
+I, [2022-07-01T10:00:42.726081 #1]  INFO -- : Started GET "/assets/application.self-a1b18aa36409689ffb0c82b74473a5a3bd7ea7822558fb4f44cf809fc966c69f.css?body=1" for 172.19.0.1 at 2022-07-01 10:00:42 +0000
+I, [2022-07-01T10:00:42.727560 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T10:13:32.190219 #1]  INFO -- : Started POST "/daily_report" for 172.19.0.1 at 2022-07-01 10:13:32 +0000
+I, [2022-07-01T10:13:32.193481 #1]  INFO -- : Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-07-01T10:13:32.245535 #1]  INFO -- : Processing by DailyReportsController#create as HTML
+I, [2022-07-01T10:13:32.247045 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0URSenL3Qb27cQMnWYwffDrT9RyTL+fIdztmVNcW4dqeSiihBZXCm1i97MO4/wxsErLBnEE2/+Ma7xp5OwyRvQ==", "daily_report"=>{"start_time"=>"08:29", "done"=>["", "229"], "schedule"=>["", "229"], "comment"=>"railsむずかちい\r\n\r\n自分のスキルシートの入力、A~D（Dが一番下）の入力で簡易タスク以外全部Dでした　めっちゃ早く入力できました（）\r\n来年んの今頃にはAが２個くらいになりたいな\r\n\r\nコンサルの辻さんが二日後に誕生ということで、コンサルチームメンバーがサプライズでレッドブルを冷蔵庫に大量に置いているのを見せるというのをやってて、\r\n新卒のマイヤくんにガヤとして参加してくれと言われたので、めっちゃ段取り確認して準備万端で大きな声で「おめでとうございます！！」って言ったんだけど\r\n辻さんの反応が静かすぎて、現場はｼｰﾝ となってました\r\nあんまりサプライズはするもんじゃないですね\r\n昨日の締め会しかり、最近時間が止まっているような空気を感じることが多い（オマエのせい）"}, "commit"=>"日報生成"}
+D, [2022-07-01T10:13:32.259160 #1] DEBUG -- :   [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-07-01T10:13:32.262958 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-07-01T10:13:32.297695 #1] DEBUG -- :   [1m[36mDepartment Load (7.7ms)[0m  [1m[34mSELECT  "departments".* FROM "departments" WHERE "departments"."id" = $1 ORDER BY "departments"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-07-01T10:13:32.300449 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:10
+D, [2022-07-01T10:13:32.313502 #1] DEBUG -- :   [1m[36mSection Load (9.4ms)[0m  [1m[34mSELECT  "sections".* FROM "sections" WHERE "sections"."id" = $1 ORDER BY "sections"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-07-01T10:13:32.316279 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:11
+D, [2022-07-01T10:13:32.327368 #1] DEBUG -- :   [1m[36mTask Load (4.8ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 ORDER BY "tasks"."id" ASC LIMIT $3[0m  [["user_id", 9], ["id", 229], ["LIMIT", 1]]
+D, [2022-07-01T10:13:32.331059 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:21
+D, [2022-07-01T10:13:32.334564 #1] DEBUG -- :   [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 ORDER BY "tasks"."id" ASC LIMIT $3[0m  [["user_id", 9], ["id", 229], ["LIMIT", 1]]
+D, [2022-07-01T10:13:32.338115 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:30
+D, [2022-07-01T10:13:32.345734 #1] DEBUG -- :   [1m[36mTaskType Load (5.2ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-07-01T10:13:32.349039 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:47
+I, [2022-07-01T10:13:32.422174 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-07-01T10:13:32.439131 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-07-01T10:13:32.444047 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-07-01T10:13:32.451398 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (27.9ms)
+I, [2022-07-01T10:13:32.865752 #1]  INFO -- : Completed 200 OK in 617ms (Views: 512.9ms | ActiveRecord: 31.9ms)
+
+
