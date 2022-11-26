@@ -1,0 +1,580 @@
+# Logfile created on 2022-09-14 09:33:04 +0000 by logger.rb/61378
+I, [2022-09-14T09:33:04.569130 #1]  INFO -- : Started GET "/" for 172.20.0.1 at 2022-09-14 09:33:04 +0000
+I, [2022-09-14T09:33:04.582559 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2022-09-14T09:33:04.962425 #1] DEBUG -- :   [1m[35m (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2022-09-14T09:33:04.963859 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+I, [2022-09-14T09:33:05.125187 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-09-14T09:33:05.132185 #1]  INFO -- : Redirected to http://localhost:3000/login
+I, [2022-09-14T09:33:05.134017 #1]  INFO -- : Filter chain halted as :login_required rendered or redirected
+I, [2022-09-14T09:33:05.136621 #1]  INFO -- : Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+I, [2022-09-14T09:33:05.154320 #1]  INFO -- : Started GET "/login" for 172.20.0.1 at 2022-09-14 09:33:05 +0000
+I, [2022-09-14T09:33:05.156732 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:05.183790 #1]  INFO -- : Processing by SessionsController#new as HTML
+I, [2022-09-14T09:33:05.328269 #1]  INFO -- :   Rendering sessions/new.html.slim within layouts/application
+I, [2022-09-14T09:33:05.384423 #1]  INFO -- :   Rendered sessions/new.html.slim within layouts/application (54.2ms)
+I, [2022-09-14T09:33:07.013295 #1]  INFO -- : Completed 200 OK in 1828ms (Views: 1791.7ms | ActiveRecord: 0.0ms)
+
+
+I, [2022-09-14T09:33:07.083077 #1]  INFO -- : Started GET "/assets/application.self-a1b18aa36409689ffb0c82b74473a5a3bd7ea7822558fb4f44cf809fc966c69f.css?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.084735 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.129988 #1]  INFO -- : Started GET "/assets/rails-ujs.self-81c572f39b69ead02e3f97fe43b76954a434591bc2837e3a35af212315e67569.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.132232 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.137835 #1]  INFO -- : Started GET "/assets/activestorage.self-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.147815 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.139662 #1]  INFO -- : Started GET "/assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.161720 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.155804 #1]  INFO -- : Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.168487 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.138504 #1]  INFO -- : Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.185077 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.227846 #1]  INFO -- : Started GET "/assets/select2.self-21d68207fa3301394a06e2ca04b61aff1b31d4368025df9a372d564c77adc968.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.231101 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:07.479465 #1]  INFO -- : Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 172.20.0.1 at 2022-09-14 09:33:07 +0000
+I, [2022-09-14T09:33:07.481381 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:11.588268 #1]  INFO -- : Started POST "/login" for 172.20.0.1 at 2022-09-14 09:33:11 +0000
+I, [2022-09-14T09:33:11.592757 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:11.597992 #1]  INFO -- : Processing by SessionsController#create as HTML
+I, [2022-09-14T09:33:11.599734 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZUM9jCeylfbjxlO0aKeErriRuDwUgjKz0KDooymB31GuXXCNEktBY5dHMHWirDTY0KRhEQRF+Wq0NjFLVYQTZw==", "session"=>{"email"=>"tenkawa-kei@gmo-am.jp", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+D, [2022-09-14T09:33:11.698288 #1] DEBUG -- :   [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tenkawa-kei@gmo-am.jp"], ["LIMIT", 1]]
+D, [2022-09-14T09:33:11.699178 #1] DEBUG -- :   ↳ app/controllers/sessions_controller.rb:7
+I, [2022-09-14T09:33:12.001421 #1]  INFO -- : Redirected to http://localhost:3000/
+I, [2022-09-14T09:33:12.002958 #1]  INFO -- : Completed 302 Found in 401ms (ActiveRecord: 64.3ms)
+
+
+I, [2022-09-14T09:33:12.011528 #1]  INFO -- : Started GET "/" for 172.20.0.1 at 2022-09-14 09:33:12 +0000
+I, [2022-09-14T09:33:12.013728 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:12.016709 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-09-14T09:33:12.020495 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.022060 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:33:12.165403 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:33:12.178176 #1] DEBUG -- :   [1m[36mTaskType Load (4.3ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:33:12.179007 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:33:12.358119 #1] DEBUG -- :   [1m[35m (15.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:33:12.359235 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:33:12.487563 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:33:12.488726 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:33:12.500237 #1] DEBUG -- :   [1m[36mTask Load (6.7ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:33:12.501294 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:33:12.521339 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.522463 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.525033 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.526887 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.529060 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.530533 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.532240 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.533032 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.535226 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.536372 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.538471 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.539382 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.541315 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.542266 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.544238 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.545060 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.547158 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.548287 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.550140 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.550999 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.552758 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.553454 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.555195 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.555976 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.557545 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.558461 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.561123 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.562068 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.564031 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.566289 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.568901 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.570014 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.572097 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.573006 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.574991 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.576017 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.577891 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.578650 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.580145 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.580949 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.582456 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.583155 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.584696 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.585622 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.587239 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.588022 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.589876 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.591103 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:12.592899 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:12.593659 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:33:12.595260 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (429.0ms)
+I, [2022-09-14T09:33:12.706237 #1]  INFO -- : Completed 200 OK in 688ms (Views: 556.7ms | ActiveRecord: 34.2ms)
+
+
+I, [2022-09-14T09:33:19.130820 #1]  INFO -- : Started GET "/?page=2" for 172.20.0.1 at 2022-09-14 09:33:19 +0000
+I, [2022-09-14T09:33:19.133035 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:19.137993 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-09-14T09:33:19.139064 #1]  INFO -- :   Parameters: {"page"=>"2"}
+D, [2022-09-14T09:33:19.142346 #1] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.145572 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:33:19.271736 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:33:19.288468 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:33:19.290257 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:33:19.294865 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:33:19.296192 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:33:19.413978 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-09-14T09:33:19.415128 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:33:19.417336 #1] DEBUG -- :   [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-09-14T09:33:19.418900 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:33:19.442931 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.444315 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.446173 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.446987 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.449658 #1] DEBUG -- :   [1m[36mTaskType Load (0.7ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.450714 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.454013 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.455047 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.457119 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.458074 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.460390 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.461440 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.463673 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.464762 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.467219 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.468786 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.472393 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.473376 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.475875 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.477407 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.479655 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.480702 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.483125 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.484121 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.486741 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.487944 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.490268 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.491911 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.494347 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.495947 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.498225 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.499877 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.501594 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.502814 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.504665 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.506029 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.508989 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.510266 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.513057 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.515230 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.537421 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.539227 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.541337 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.542239 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.544304 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.545142 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.547637 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.548710 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:33:19.551627 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:33:19.553019 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:33:19.555108 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (282.2ms)
+I, [2022-09-14T09:33:19.647710 #1]  INFO -- : Completed 200 OK in 507ms (Views: 458.0ms | ActiveRecord: 4.0ms)
+
+
+I, [2022-09-14T09:33:27.439936 #1]  INFO -- : Started GET "/tasks/267/edit" for 172.20.0.1 at 2022-09-14 09:33:27 +0000
+I, [2022-09-14T09:33:27.442141 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:33:27.445956 #1]  INFO -- : Processing by TasksController#edit as HTML
+I, [2022-09-14T09:33:27.447453 #1]  INFO -- :   Parameters: {"id"=>"267"}
+D, [2022-09-14T09:33:27.452762 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:33:27.454263 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-09-14T09:33:27.457878 #1] DEBUG -- :   [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:33:27.459658 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:66
+I, [2022-09-14T09:33:27.560063 #1]  INFO -- :   Rendering tasks/edit.html.slim within layouts/application
+D, [2022-09-14T09:33:27.599706 #1] DEBUG -- :   [1m[36mTaskType Load (0.3ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:33:27.601258 #1] DEBUG -- :   ↳ app/views/tasks/_form.html.slim:12
+I, [2022-09-14T09:33:27.605473 #1]  INFO -- :   Rendered tasks/_form.html.slim (23.7ms)
+I, [2022-09-14T09:33:27.606566 #1]  INFO -- :   Rendered tasks/edit.html.slim within layouts/application (45.8ms)
+I, [2022-09-14T09:33:27.693761 #1]  INFO -- : Completed 200 OK in 243ms (Views: 189.3ms | ActiveRecord: 1.5ms)
+
+
+I, [2022-09-14T09:36:02.158349 #1]  INFO -- : Started PATCH "/tasks/267" for 172.20.0.1 at 2022-09-14 09:36:02 +0000
+I, [2022-09-14T09:36:02.161056 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:36:02.164344 #1]  INFO -- : Processing by TasksController#update as HTML
+I, [2022-09-14T09:36:02.165287 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"gpv6eVRHx73ff3+MxCSuH8fwEqQqjfab5gl28C89Fqp1SOT5kpk5XTLeHeN9qOtKcFqR0sjoTL1NhNlNhQqokg==", "task"=>{"name"=>"GMOAM-5012 単体テスト実施", "task_type_id"=>"1", "description"=>"実施中、明らかに処理が遅くて中断\r\nコードの書き方が処理を遅くさせていたのでその修正をやっている\r\nそしてスプリント中に間に合わないことが確定した", "status"=>"wip"}, "commit"=>"更新する", "id"=>"267"}
+D, [2022-09-14T09:36:02.168274 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.169661 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-09-14T09:36:02.172223 #1] DEBUG -- :   [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.173198 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:66
+D, [2022-09-14T09:36:02.175531 #1] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2022-09-14T09:36:02.176545 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:36:02.188351 #1] DEBUG -- :   [1m[36mTaskType Load (0.2ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.189773 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:36:02.194731 #1] DEBUG -- :   [1m[36mTask Update (2.4ms)[0m  [1m[33mUPDATE "tasks" SET "status" = $1, "description" = $2, "updated_at" = $3 WHERE "tasks"."id" = $4[0m  [["status", "wip"], ["description", "実施中、明らかに処理が遅くて中断\r\nコードの書き方が処理を遅くさせていたのでその修正をやっている\r\nそしてスプリント中に間に合わないことが確定した"], ["updated_at", "2022-09-14 09:36:02.191508"], ["id", 267]]
+D, [2022-09-14T09:36:02.195571 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:36:02.198504 #1] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-09-14T09:36:02.199280 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+I, [2022-09-14T09:36:02.200508 #1]  INFO -- : Redirected to http://localhost:3000/tasks
+I, [2022-09-14T09:36:02.201394 #1]  INFO -- : Completed 302 Found in 34ms (ActiveRecord: 5.5ms)
+
+
+I, [2022-09-14T09:36:02.209576 #1]  INFO -- : Started GET "/tasks" for 172.20.0.1 at 2022-09-14 09:36:02 +0000
+I, [2022-09-14T09:36:02.210551 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:36:02.212751 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-09-14T09:36:02.214527 #1] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.215592 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:36:02.292547 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:36:02.299006 #1] DEBUG -- :   [1m[36mTaskType Load (0.3ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:36:02.299895 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:36:02.302918 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:36:02.303723 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:36:02.439480 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:36:02.440550 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:36:02.442877 #1] DEBUG -- :   [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:36:02.444456 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:36:02.448434 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.449471 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.451536 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.452655 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.454323 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.455295 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.457656 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.459115 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.461467 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.462452 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.464297 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.465112 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.466723 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.467617 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.469545 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.470636 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.472795 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.473721 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.475535 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.476661 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.478999 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.480001 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.481711 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.482743 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.484464 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.486864 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.489434 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.490876 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.492802 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.493896 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.495596 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.496258 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.497949 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.499052 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.500792 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.501938 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.504462 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.505592 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.507423 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.508757 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.510893 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.511707 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.513506 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.514312 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.516017 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.516896 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.518906 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.520228 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:36:02.522607 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:36:02.523784 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:36:02.526521 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (233.0ms)
+I, [2022-09-14T09:36:02.629620 #1]  INFO -- : Completed 200 OK in 416ms (Views: 387.0ms | ActiveRecord: 3.7ms)
+
+
+I, [2022-09-14T09:36:06.990135 #1]  INFO -- : Started GET "/daily_report" for 172.20.0.1 at 2022-09-14 09:36:06 +0000
+I, [2022-09-14T09:36:06.992767 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:36:07.013248 #1]  INFO -- : Processing by DailyReportsController#index as HTML
+D, [2022-09-14T09:36:07.015589 #1] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:36:07.016754 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:36:07.097473 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-09-14T09:36:07.105323 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:36:07.106272 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-09-14T09:36:07.112621 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (14.1ms)
+I, [2022-09-14T09:36:07.186898 #1]  INFO -- : Completed 200 OK in 172ms (Views: 144.2ms | ActiveRecord: 0.9ms)
+
+
+I, [2022-09-14T09:38:04.093884 #1]  INFO -- : Started GET "/tasks" for 172.20.0.1 at 2022-09-14 09:38:04 +0000
+I, [2022-09-14T09:38:04.096131 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:38:04.102007 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-09-14T09:38:04.104723 #1] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.106059 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:38:04.215627 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:38:04.229196 #1] DEBUG -- :   [1m[36mTaskType Load (0.6ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:38:04.231769 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:38:04.238038 #1] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:38:04.239466 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:38:04.396298 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:38:04.397884 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:38:04.400806 #1] DEBUG -- :   [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:38:04.402168 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:38:04.407847 #1] DEBUG -- :   [1m[36mTaskType Load (0.6ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.409428 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.412509 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.414179 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.417578 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.418680 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.421582 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.432198 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.435986 #1] DEBUG -- :   [1m[36mTaskType Load (0.6ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.437273 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.440217 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.441561 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.445367 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.446713 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.449476 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.450887 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.453515 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.454977 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.458449 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.460640 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.463967 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.465605 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.468570 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.469963 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.473246 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.475389 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.478279 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.479815 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.482871 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.485003 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.488385 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.490079 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.494006 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.1ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.495758 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.498675 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.500568 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.504431 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.506378 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.509702 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.511350 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.514627 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.516327 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.519642 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.521248 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.525269 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.527922 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.531364 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.533344 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:04.537706 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:04.540037 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:38:04.544959 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (327.8ms)
+I, [2022-09-14T09:38:04.667063 #1]  INFO -- : Completed 200 OK in 564ms (Views: 527.3ms | ActiveRecord: 5.8ms)
+
+
+I, [2022-09-14T09:38:13.175012 #1]  INFO -- : Started GET "/?page=2" for 172.20.0.1 at 2022-09-14 09:38:13 +0000
+I, [2022-09-14T09:38:13.178100 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:38:13.182059 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2022-09-14T09:38:13.183419 #1]  INFO -- :   Parameters: {"page"=>"2"}
+D, [2022-09-14T09:38:13.186381 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.188464 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:38:13.284257 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:38:13.291858 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:38:13.293247 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:38:13.298219 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:38:13.299347 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:38:13.434387 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-09-14T09:38:13.437026 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:38:13.440383 #1] DEBUG -- :   [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 25]]
+D, [2022-09-14T09:38:13.441644 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:38:13.445775 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.447078 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.450173 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.451943 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.456498 #1] DEBUG -- :   [1m[36mTaskType Load (0.8ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.458025 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.461204 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.462906 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.467007 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.468963 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.473538 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.475227 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.479203 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.481766 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.485803 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.487342 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.490012 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.491402 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.493516 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.495026 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.497391 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.498551 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.500730 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.501797 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.504342 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.505319 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.507506 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.508911 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.511518 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.512668 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.514913 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.515969 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.518428 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.519521 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.522181 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.523273 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.526193 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.527607 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.529943 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.530921 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.533184 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.534965 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.537326 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.538613 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.541964 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.543155 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.545270 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.546549 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:38:13.549010 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:38:13.550023 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:38:13.552451 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (267.0ms)
+I, [2022-09-14T09:38:13.667224 #1]  INFO -- : Completed 200 OK in 482ms (Views: 443.6ms | ActiveRecord: 4.9ms)
+
+
+I, [2022-09-14T09:38:23.847983 #1]  INFO -- : Started GET "/tasks/267/edit" for 172.20.0.1 at 2022-09-14 09:38:23 +0000
+I, [2022-09-14T09:38:23.850250 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:38:23.854465 #1]  INFO -- : Processing by TasksController#edit as HTML
+I, [2022-09-14T09:38:23.855870 #1]  INFO -- :   Parameters: {"id"=>"267"}
+D, [2022-09-14T09:38:23.858274 #1] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:38:23.859415 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-09-14T09:38:23.862135 #1] DEBUG -- :   [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:38:23.863492 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:66
+I, [2022-09-14T09:38:23.968818 #1]  INFO -- :   Rendering tasks/edit.html.slim within layouts/application
+D, [2022-09-14T09:38:24.000288 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:38:24.001438 #1] DEBUG -- :   ↳ app/views/tasks/_form.html.slim:12
+I, [2022-09-14T09:38:24.006670 #1]  INFO -- :   Rendered tasks/_form.html.slim (10.9ms)
+I, [2022-09-14T09:38:24.007909 #1]  INFO -- :   Rendered tasks/edit.html.slim within layouts/application (38.3ms)
+I, [2022-09-14T09:38:24.151395 #1]  INFO -- : Completed 200 OK in 294ms (Views: 258.5ms | ActiveRecord: 1.5ms)
+
+
+I, [2022-09-14T09:39:32.646744 #1]  INFO -- : Started PATCH "/tasks/267" for 172.20.0.1 at 2022-09-14 09:39:32 +0000
+I, [2022-09-14T09:39:32.648730 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:39:32.653280 #1]  INFO -- : Processing by TasksController#update as HTML
+I, [2022-09-14T09:39:32.656131 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"KKifFsPTAidtkJlgGdfO5S0uAw/8167rm2ItW0tREsPfe4GWBQ38x4Ax+w+gW4uwmoSAeR6yFM0w74Lm4Was+w==", "task"=>{"name"=>"GMOAM-5012 単体テスト実施", "task_type_id"=>"1", "description"=>"実施中、明らかに処理が遅くて中断\r\nコードの書き方が処理を遅くさせていたのでその修正をやっている\r\nそしてスプリント中に間に合わないことが確定した\r\n今日は3時間睡眠です", "status"=>"wip"}, "commit"=>"更新する", "id"=>"267"}
+D, [2022-09-14T09:39:32.660745 #1] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.662283 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-09-14T09:39:32.664593 #1] DEBUG -- :   [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.665656 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:66
+D, [2022-09-14T09:39:32.667252 #1] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2022-09-14T09:39:32.668377 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:39:32.670961 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.672586 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:39:32.676196 #1] DEBUG -- :   [1m[36mTask Update (0.6ms)[0m  [1m[33mUPDATE "tasks" SET "description" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["description", "実施中、明らかに処理が遅くて中断\r\nコードの書き方が処理を遅くさせていたのでその修正をやっている\r\nそしてスプリント中に間に合わないことが確定した\r\n今日は3時間睡眠です"], ["updated_at", "2022-09-14 09:39:32.674863"], ["id", 267]]
+D, [2022-09-14T09:39:32.677471 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+D, [2022-09-14T09:39:32.679640 #1] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2022-09-14T09:39:32.680537 #1] DEBUG -- :   ↳ app/controllers/tasks_controller.rb:41
+I, [2022-09-14T09:39:32.681735 #1]  INFO -- : Redirected to http://localhost:3000/tasks
+I, [2022-09-14T09:39:32.682546 #1]  INFO -- : Completed 302 Found in 24ms (ActiveRecord: 3.5ms)
+
+
+I, [2022-09-14T09:39:32.692495 #1]  INFO -- : Started GET "/tasks" for 172.20.0.1 at 2022-09-14 09:39:32 +0000
+I, [2022-09-14T09:39:32.693778 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:39:32.695941 #1]  INFO -- : Processing by TasksController#index as HTML
+D, [2022-09-14T09:39:32.697657 #1] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.698717 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:39:32.775559 #1]  INFO -- :   Rendering tasks/index.html.slim within layouts/application
+D, [2022-09-14T09:39:32.783012 #1] DEBUG -- :   [1m[36mTaskType Load (0.5ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:39:32.783905 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:11
+D, [2022-09-14T09:39:32.787104 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "tasks"."id") FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:39:32.788326 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:28
+D, [2022-09-14T09:39:32.918893 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  DISTINCT "tasks"."id" AS count_column FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:39:32.919945 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:39:32.922563 #1] DEBUG -- :   [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT  DISTINCT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 9], ["LIMIT", 25], ["OFFSET", 0]]
+D, [2022-09-14T09:39:32.924374 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:29
+D, [2022-09-14T09:39:32.927819 #1] DEBUG -- :   [1m[36mTaskType Load (0.4ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.928793 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.930415 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.931229 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.933113 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.933950 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.936070 #1] DEBUG -- :   [1m[36mTaskType Load (0.3ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.937164 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.938799 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.940159 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.942380 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.943276 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.945084 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.945910 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.947626 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.948738 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.950426 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.951365 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.953092 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.954077 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.956762 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.957737 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.959815 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.960858 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.963081 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.964867 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.967221 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.968208 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.970317 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.971494 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.980085 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.981199 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.983158 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.983981 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.985514 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.986477 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.988191 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.989108 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.990730 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.991474 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.993560 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.994493 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.996918 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:32.997805 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:32.999388 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:33.000429 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:33.002341 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:33.003195 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+D, [2022-09-14T09:39:33.005425 #1] DEBUG -- :   [1m[36mCACHE TaskType Load (0.0ms)[0m  [1m[34mSELECT  "task_types".* FROM "task_types" WHERE "task_types"."id" = $1 ORDER BY "task_types"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2022-09-14T09:39:33.007195 #1] DEBUG -- :   ↳ app/views/tasks/index.html.slim:45
+I, [2022-09-14T09:39:33.009181 #1]  INFO -- :   Rendered tasks/index.html.slim within layouts/application (233.0ms)
+I, [2022-09-14T09:39:33.124513 #1]  INFO -- : Completed 200 OK in 428ms (Views: 401.1ms | ActiveRecord: 3.9ms)
+
+
+I, [2022-09-14T09:39:34.627630 #1]  INFO -- : Started GET "/daily_report" for 172.20.0.1 at 2022-09-14 09:39:34 +0000
+I, [2022-09-14T09:39:34.630614 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:39:34.634406 #1]  INFO -- : Processing by DailyReportsController#index as HTML
+D, [2022-09-14T09:39:34.637700 #1] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:39:34.639412 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+I, [2022-09-14T09:39:34.740605 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-09-14T09:39:34.748616 #1] DEBUG -- :   [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:39:34.771737 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-09-14T09:39:34.777714 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (35.5ms)
+I, [2022-09-14T09:39:34.889481 #1]  INFO -- : Completed 200 OK in 254ms (Views: 219.1ms | ActiveRecord: 1.1ms)
+
+
+I, [2022-09-14T09:46:46.225025 #1]  INFO -- : Started POST "/daily_report" for 172.20.0.1 at 2022-09-14 09:46:46 +0000
+I, [2022-09-14T09:46:46.228034 #1]  INFO -- : Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2022-09-14T09:46:46.259729 #1]  INFO -- : Processing by DailyReportsController#create as HTML
+I, [2022-09-14T09:46:46.260787 #1]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"KGpFTUQt44R0NPFBf17x6H/yAHNYMmN6tWBYpWD0K1zlxhL08LfR+VOEJ3lqlhY7g++bU72YnndBJdyTvxoJNQ==", "daily_report"=>{"start_time"=>"07:42", "done"=>["", "267"], "schedule"=>["", "267", "268"], "comment"=>"学び：\r\n- SQLのインデックス、すごい\r\n今までSQL文のインデックスの恩恵についてイマイチピンときていなかったけれども、\r\n今日チェさんがインデックスの効力を実演してくれて感動した\r\n膨大なデータを扱う時にインデックスは超絶な効果を発揮するんですね\r\n今まで取り扱っているデータ数が少なくてインデックス使う恩恵に預かることがなかったので目から鱗だった\r\n10倍近く速くなるもんなんですね\r\n\r\n- 実装するWHERE句も順番大事\r\n適当に並べていたWHERE句だったんですけど、\r\nインデックス貼ってあるカラムを最初に持ってくると処理が速くなると教えていただき\r\n点と点がつながりましたね\r\nWHEREに書いている条件からちっちゃなテーブルを裏で作ってそこからまた絞り込んだ小さなテーブルを...の繰り返しをしているので\r\n順番も適切に書く必要があるんだな、と学びが多かった\r\n\r\nしかしスプリント中に間に合わないことが確定しそう　やばい\r\n\r\nどーてもいい話：\r\n- スプラトゥーン3\r\nいろんなところで面白い面白いと聞くので、ガンダムも再開したしスプラも始めるかぁ〜と思っていた矢先、\r\nこんな記事を発見して真顔になった\r\n----------------------------------------------\r\n旦那のスプラトゥーン3のデータを消した\r\nhttps://anond.hatelabo.jp/20220912094957\r\n----------------------------------------------\r\nゲームとの付き合い方は1年間を犠牲にして学んできたので、\r\n今回も見にしようかな....", "check_compliance1"=>"true", "check_compliance2"=>"true"}, "commit"=>"日報生成"}
+D, [2022-09-14T09:46:46.268246 #1] DEBUG -- :   [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.269285 #1] DEBUG -- :   ↳ app/controllers/application_controller.rb:8
+D, [2022-09-14T09:46:46.340424 #1] DEBUG -- :   [1m[36mDepartment Load (5.6ms)[0m  [1m[34mSELECT  "departments".* FROM "departments" WHERE "departments"."id" = $1 ORDER BY "departments"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.341740 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:10
+D, [2022-09-14T09:46:46.382724 #1] DEBUG -- :   [1m[36mSection Load (6.6ms)[0m  [1m[34mSELECT  "sections".* FROM "sections" WHERE "sections"."id" = $1 ORDER BY "sections"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.383651 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:11
+D, [2022-09-14T09:46:46.387390 #1] DEBUG -- : Unpermitted parameters: :check_compliance1, :check_compliance2
+D, [2022-09-14T09:46:46.399436 #1] DEBUG -- :   [1m[36mTask Load (9.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 ORDER BY "tasks"."id" ASC LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.400236 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:21
+D, [2022-09-14T09:46:46.401505 #1] DEBUG -- : Unpermitted parameters: :check_compliance1, :check_compliance2
+D, [2022-09-14T09:46:46.402660 #1] DEBUG -- :   [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 ORDER BY "tasks"."id" ASC LIMIT $3[0m  [["user_id", 9], ["id", 267], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.403501 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:30
+D, [2022-09-14T09:46:46.405617 #1] DEBUG -- :   [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" = $2 ORDER BY "tasks"."id" ASC LIMIT $3[0m  [["user_id", 9], ["id", 268], ["LIMIT", 1]]
+D, [2022-09-14T09:46:46.406800 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:30
+D, [2022-09-14T09:46:46.408080 #1] DEBUG -- : Unpermitted parameters: :check_compliance1, :check_compliance2
+D, [2022-09-14T09:46:46.412160 #1] DEBUG -- :   [1m[36mTaskType Load (3.0ms)[0m  [1m[34mSELECT "task_types".* FROM "task_types"[0m
+D, [2022-09-14T09:46:46.413118 #1] DEBUG -- :   ↳ app/controllers/daily_reports_controller.rb:47
+D, [2022-09-14T09:46:46.414437 #1] DEBUG -- : Unpermitted parameters: :check_compliance1, :check_compliance2
+I, [2022-09-14T09:46:46.468227 #1]  INFO -- :   Rendering daily_reports/index.html.slim within layouts/application
+D, [2022-09-14T09:46:46.473832 #1] DEBUG -- :   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 9]]
+D, [2022-09-14T09:46:46.475042 #1] DEBUG -- :   ↳ app/views/daily_reports/index.html.slim:9
+I, [2022-09-14T09:46:46.479878 #1]  INFO -- :   Rendered daily_reports/index.html.slim within layouts/application (10.9ms)
+I, [2022-09-14T09:46:46.596203 #1]  INFO -- : Completed 200 OK in 333ms (Views: 180.3ms | ActiveRecord: 63.8ms)
+
+
