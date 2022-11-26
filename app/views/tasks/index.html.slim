@@ -8,7 +8,7 @@ h1.mt-3.mt-3 タスク一覧
   .form-group.row.my-3
     = f.label :task_type_id_eq, '種類', class: 'col-sm-2 col-form-label'
     .col-sm-10
-      = f.select :task_type_id_eq, options_for_select(TaskType.all.map{|c|[c[:name], c[:id]]}), {include_blank: true}, class: 'form-select'
+      = f.select :task_type_id_eq, TaskType.all.map{|c|[c[:name], c[:id]]}, {include_blank: true}, class: 'form-select'
   .form-group.row.my-3
     = f.label :status_eq, '進捗', class: 'col-sm-2 col-form-label'
     .col-sm-10
