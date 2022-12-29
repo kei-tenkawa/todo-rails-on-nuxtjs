@@ -1,4 +1,4 @@
-# TODO アプリ + Next.js
+# TODO アプリ + Vue.js
 
 ```
 docker compose run web rails ---
