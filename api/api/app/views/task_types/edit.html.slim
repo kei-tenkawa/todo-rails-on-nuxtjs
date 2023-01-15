@@ -1,0 +1,6 @@
+h1.mt-3 タスクの種類の編集
+
+.nav.justify-content.end
+  = link_to '一覧', task_types_path, class: 'nav-link'
+
+= render partial: 'form', locals: { task_type: @task_type }

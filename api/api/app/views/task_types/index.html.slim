@@ -1,0 +1,22 @@
+h1.mt-3.mt-3 タスクの種類一覧
+
+= link_to '新規登録', new_task_type_path, class: 'btn btn-primary mb-3'
+
+.mb-3
+  = paginate @task_types
+  = page_entries_info @task_types
+
+table.table.table-hover
+  thead.thead-default
+    tr
+      th = sort_link(@q, :name)
+      th = TaskType.human_attribute_name(:created_at)
+      th
+    tbody
+      - @task_types.each do |task_type|
+        tr id="task-type-#{task_type.id}"
+          td = link_to task_type.name, task_type
+          td = task_type.created_at
+          td
+            = link_to '編集', edit_task_type_path(task_type), class: 'btn btn-primary me-3'
+            = link_to '削除', task_type, method: :delete, remote: true, data: {confirm: "タスク「#{task_type.name}」を削除します。よろしいですか？"}, class: 'btn btn-danger delete'
