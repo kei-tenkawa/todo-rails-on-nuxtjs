@@ -1,7 +1,5 @@
 class DailyReportsController < ApplicationController
-  def index
-    @tasks = current_user.tasks
-  end
+  def index; end
 
   # textareaに日報データをぶち込む方針だったが
   # HTMLタグがうまく変換されないため
@@ -85,24 +83,24 @@ class DailyReportsController < ApplicationController
 
     # end 詳細
 
-    @nippou_text = "【日報】#{syozoku} #{current_user.name}
+    nippou_text = "【日報】#{syozoku} #{current_user.name}
     "
-    @nippou_text += "勤務時間：#{work_time}
+    nippou_text += "勤務時間：#{work_time}
 
     "
-    @nippou_text += detail
+    nippou_text += detail
 
-    @nippou_text += "
+    nippou_text += "
 
     以上です。
     ※ produced by tenkawa task tool"
 
-    render 'index'
+    render status: :ok, json: nippou_text
   end
 
   private
 
   def daily_report_params
-    params.require(:daily_report).permit(:start_time, :comment, done: [], schedule: [])
+    params.permit(:start_time, :comment, done: [], schedule: [])
   end
 end

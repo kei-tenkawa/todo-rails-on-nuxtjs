@@ -26,11 +26,12 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./frontend:/usr/local/todo
-      - node_modules:/usr/local/todo/node_modules
+    #   - ./frontend/node_modules:/usr/local/todo/node_modules
     ports:
       - "8000:3000"
     command: "npm run dev"
+    tty: true
 volumes:
-#   node_modules:
+#   frontend/node_modules:
   mysql-db:
     driver: local
