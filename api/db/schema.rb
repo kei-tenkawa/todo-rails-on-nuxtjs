@@ -48,11 +48,9 @@ ActiveRecord::Schema.define(version: 2023_01_05_094340) do
   end
 
   create_table "task_statuses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci", force: :cascade do |t|
-    t.bigint "tasks_id", null: false
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["tasks_id"], name: "index_task_statuses_on_tasks_id"
   end
 
   create_table "task_types", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci", force: :cascade do |t|
@@ -68,7 +66,9 @@ ActiveRecord::Schema.define(version: 2023_01_05_094340) do
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.bigint "task_type_id"
+    t.bigint "task_status_id", null: false
     t.index ["name"], name: "index_tasks_on_name", unique: true
+    t.index ["task_status_id"], name: "index_tasks_on_task_status_id"
     t.index ["task_type_id"], name: "index_tasks_on_task_type_id"
     t.index ["user_id"], name: "index_tasks_on_user_id"
   end
@@ -88,4 +88,5 @@ ActiveRecord::Schema.define(version: 2023_01_05_094340) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "tasks", "task_statuses"
 end
