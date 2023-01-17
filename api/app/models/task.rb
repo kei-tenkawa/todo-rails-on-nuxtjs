@@ -39,6 +39,7 @@ class Task < ApplicationRecord
 
   belongs_to :user
   belongs_to :task_type
+  belongs_to :task_status
 
   scope :recent, -> { order(created_at: :desc) }
 
