@@ -1,6 +1,5 @@
 <template>
   <h1 class="mt-3">ログイン</h1>
-
   <div>
     <div class="form-group">
       <label>メールアドレス</label>
