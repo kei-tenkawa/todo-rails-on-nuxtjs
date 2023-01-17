@@ -29,6 +29,7 @@ services:
     #   - ./frontend/node_modules:/usr/local/todo/node_modules
     ports:
       - "8000:3000"
+      - 24678:24678 # HMR用のポートを追加
     command: "npm run dev"
     tty: true
 volumes:

@@ -1,3 +1,3 @@
 <template>
-  <div>index / users</div>
+  <div>index / task_types ids</div>
 </template>
