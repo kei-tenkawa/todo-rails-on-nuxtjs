@@ -1,8 +1,8 @@
 <template>
   <h1 class="mt-3 mt-3">タスク一覧</h1>
-
-  <div class='btn btn-primary mb-3'>新規登録</div>
-
+  <div class="btn btn-primary my-3">
+    <NuxtLink to="/tasks/new">新規登録</NuxtLink>
+  </div>
 
   <table clas="table table-hover">
     <thead class="thead-default">

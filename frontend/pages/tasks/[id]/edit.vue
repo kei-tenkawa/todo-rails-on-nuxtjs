@@ -2,7 +2,9 @@
   <h1 class="mt-3">タスクの編集</h1>
 
   <div class="nav justify-content end">
-    <div class="nav-link">一覧</div>
+    <NuxtLink to="/tasks">
+      <div class="nav-link">一覧</div>
+    </NuxtLink>
   </div>
     <div>
       <div class="form-group">

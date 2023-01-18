@@ -2,7 +2,9 @@
   <h1 class="mt-3">タスクの詳細</h1>
 
   <div class="nav justify-content-end">
-    <div class="nav-link">一覧</div>
+    <NuxtLink to="/tasks">
+      <div class="nav-link">一覧</div>
+    </NuxtLink>
   </div>
   <table class="table table-hover">
     <tbody>

@@ -1,8 +1,10 @@
 <template>
-  <h1 class="mt-3">ユーザの詳細</h1>
+  <h1 class="mt-3 mb-3">ユーザの詳細</h1>
 
   <div class="nav justify-content-end">
-    <div class="nav-link">一覧</div>
+    <NuxtLink to="/admin/users">
+      <div class="nav-link">一覧</div>
+    </NuxtLink>
   </div>
   <table class="table table-hover">
     <tbody>
@@ -35,3 +37,8 @@
   <div class='btn btn-primary me-3'>編集</div>
   <div class='btn btn-danger'>削除</div>
 </template>
+<script setup lang="ts">
+definePageMeta({
+  middleware: ['auth'],
+})
+</script>

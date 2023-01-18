@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     strict: true,
     shim: false
   },
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL || 'https://localhost:3000/',
+    },
+  },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "@/assets/styles/common.scss"
