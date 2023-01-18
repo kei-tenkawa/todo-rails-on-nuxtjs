@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mt-3 mb-3">ユーザ登録</h1>
+  <h1 class="mt-3 mb-3">ユーザの編集</h1>
 
   <div class="nav justify-content end">
     <NuxtLink to="/admin/users">
@@ -28,7 +28,7 @@
       <input type="password" id="user_password_confirm" class="form-control" />
     </div>
   </div>
-  <div class="btn btn-primary mt-3">登録する</div>
+  <div class="btn btn-primary mt-3">更新する</div>
 </template>
 <script setup lang="ts">
 definePageMeta({

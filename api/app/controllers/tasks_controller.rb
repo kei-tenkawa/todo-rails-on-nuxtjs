@@ -10,7 +10,7 @@ class TasksController < ApplicationController
 
   def new
     task = Task.new
-    render status: :ok, json: task
+    render status: :ok, json: { message: 'success', data: tasks, errors: [] }
   end
 
   def edit; end
@@ -22,7 +22,7 @@ class TasksController < ApplicationController
       # SampleJob.perform_later
       render status: :ok, json: task
     else
-      render status: 500, json: { message: 'Internal Server Error' }
+      render status: 500, json: { message: 'error', data: nil, errors: ['Internal Server Error'] }
     end
   end
 
@@ -30,7 +30,7 @@ class TasksController < ApplicationController
     if task.update!(task_params)
       render status: :ok, json: task
     else
-      render status: 500, json: { message: 'Internal Server Error' }
+      render status: 500, json: { message: 'error', data: nil, errors: ['Internal Server Error'] }
     end
   end
 
@@ -38,7 +38,7 @@ class TasksController < ApplicationController
     if @task.destroy
       render status: :ok
     else
-      render status: 500, json: { message: 'Internal Server Error' }
+      render status: 500, json: { message: 'error', data: nil, errors: ['Internal Server Error'] }
     end
   end
 

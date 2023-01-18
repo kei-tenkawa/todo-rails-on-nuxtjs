@@ -1,7 +1,9 @@
 <template>
-  <h1 class="mt-3.mt-3">タスク一覧</h1>
+  <h1 class="mt-3 mt-3">タスク一覧</h1>
 
-  <div class='btn btn-primary mb-3'>新規登録</div>
+  <NuxtLink to="/tasks/new">
+    <div class='btn btn-primary mb-3'>新規登録</div>
+  </NuxtLink>
 
 
   <table clas="table table-hover">
@@ -13,7 +15,7 @@
         <th>登録日時</th>
         <th></th>
       </tr>
-
+    </thead>
     <tbody>
       <tr id="task-id">
         <td>タスク名</td>
@@ -26,6 +28,5 @@
         </td>
       </tr>
     </tbody>
-    </thead>
   </table>
 </template>

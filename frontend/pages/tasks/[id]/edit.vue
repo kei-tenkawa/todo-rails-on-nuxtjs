@@ -1,8 +1,11 @@
 <template>
   <h1 class="mt-3">タスクの編集</h1>
 
-  <div class="nav justify-content-end">
-    <div class="nav-link">一覧</div>
+  <div class="nav justify-content end">
+    <NuxtLink to="/tasks">
+      <div class="nav-link">一覧</div>
+    </NuxtLink>
+  </div>
     <div>
       <div class="form-group">
         <label>タスク名称</label>
@@ -25,5 +28,5 @@
         <textarea rows="5" id='task_description' class="form-control"></textarea>
       </div> -->
     </div>
-  </div>
+    <div class="btn btn-primary mt-3">更新する</div>
 </template>
