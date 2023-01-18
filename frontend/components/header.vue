@@ -3,9 +3,9 @@
       <div class="navbar-brand ms-3"> Todo</div>
 
       <ul class="navbar-nav ms-auto">
-          <li class="nav-item nav-link"><NuxtLink tag="span" to="/">タスク一覧</NuxtLink></li>
-          <li class="nav-item nav-link"><NuxtLink tag="span" to="/admin/users">ユーザ一覧</NuxtLink></li>
-          <li class="nav-item nav-link"><NuxtLink tag="span" to="/logout">ログアウト</NuxtLink></li>
+          <li class="nav-item nav-link"><NuxtLink to="/tasks">タスク一覧</NuxtLink></li>
+          <li class="nav-item nav-link"><NuxtLink to="/admin/users">ユーザ一覧</NuxtLink></li>
+          <li class="nav-item nav-link"><NuxtLink to="/logout">ログアウト</NuxtLink></li>
       </ul>
   </div>
 </template>

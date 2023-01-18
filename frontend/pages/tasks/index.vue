@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mt-3.mt-3">タスク一覧</h1>
+  <h1 class="mt-3 mt-3">タスク一覧</h1>
 
   <div class='btn btn-primary mb-3'>新規登録</div>
 

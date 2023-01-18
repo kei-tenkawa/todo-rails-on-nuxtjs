@@ -4,7 +4,10 @@ export default defineNuxtConfig({
     strict: true,
     shim: false
   },
-  css: ["bootstrap/dist/css/bootstrap.min.css"],
+  css: [
+    "bootstrap/dist/css/bootstrap.min.css",
+    "@/assets/styles/common.scss"
+  ],
   app: {
     head: {
       titleTemplate: '%s - Todo',
