@@ -15,9 +15,9 @@ class SessionsController < ApplicationController
       # TODO: ログイン状態を保持する
       # cookies.permanent.signed[:user_id] = user.id
       # cookies.permanent[:remember_token] = user.remember_token
-      payload = { message: 'ログインしました。', name: user.name }
+      payload = { message: 'ログインしました。', data: user, errors: [] }
     else
-      payload = { errors: ['メールアドレスまたはパスワードが正しくありません。'] }
+      payload = { message: 'ログインに失敗しました。', data: nil, errors: ["メールアドレスまたはパスワードが正しくありません"] }
     end
     render status: :ok, json: payload
   end
