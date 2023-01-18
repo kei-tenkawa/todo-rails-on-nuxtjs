@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mt-3">タスクの新規登録</h1>
+  <h1 class="mt-3">タスクの編集</h1>
 
   <div class="nav justify-content end">
     <div class="nav-link">一覧</div>
@@ -26,5 +26,5 @@
         <textarea rows="5" id='task_description' class="form-control"></textarea>
       </div> -->
     </div>
-    <div class="btn btn-primary mt-3">登録する</div>
+    <div class="btn btn-primary mt-3">更新する</div>
 </template>
